@@ -43,4 +43,4 @@ Professional Certificate on Coursera
 ---
 
 ## 📫 Connect With Me
-- LinkedIn: (https://www.linkedin.com/feed/)
+- LinkedIn: (https://www.linkedin.com/in/olayinka-abimbowo)
