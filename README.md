@@ -3,6 +3,7 @@
 
 🎯 Currently completing the Google Cybersecurity
 Professional Certificate on Coursera
+
 ---
 
 ## 📋 Professional Statement
@@ -17,6 +18,7 @@ I am actively developing my technical skills, problem
 solving ability, and time management to support those 
 security goals in both private sector and government 
 environments.
+
 ---
 
 ## 🛡️ Certifications In Progress
