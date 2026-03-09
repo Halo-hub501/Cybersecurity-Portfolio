@@ -3,7 +3,20 @@
 
 🎯 Currently completing the Google Cybersecurity
 Professional Certificate on Coursera
+---
 
+## 📋 Professional Statement
+
+I am an aspiring cybersecurity professional genuinely 
+interested in the tactical thinking required to identify 
+potential risks, threats, and vulnerabilities that could 
+compromise an organization's confidentiality, integrity, 
+and availability. I value protecting organizations and 
+their data and ensuring security is applied equitably. 
+I am actively developing my technical skills, problem 
+solving ability, and time management to support those 
+security goals in both private sector and government 
+environments.
 ---
 
 ## 🛡️ Certifications In Progress
