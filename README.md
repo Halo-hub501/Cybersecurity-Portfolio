@@ -44,15 +44,14 @@ gaps. Provided prioritized remediation recommendations.
 
 ## 📚 Skills Learned
 
-### Module 1 — Foundations of Cybersecurity
-- Understanding of the CIA Triad — Confidentiality, Integrity, 
-  Availability
+### Module 1 — Foundations of Cybersecurity ✅
+- Understanding of the CIA Triad — Confidentiality, Integrity, Availability
 - History and evolution of cyber attacks
 - Core responsibilities of a security analyst
 - Threat actors, vulnerabilities, and risk concepts
 - Introduction to SIEM tools
 
-### Module 2 — Security Risk Management (In Progress)
+### Module 2 — Play It Safe: Manage Security Risks ✅
 - Security frameworks and controls
 - NIST Cybersecurity Framework (CSF)
 - OWASP security principles
@@ -92,7 +91,9 @@ gaps. Provided prioritized remediation recommendations.
 <img src="https://img.shields.io/badge/-CompTIA_Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
 </div>
 
-- 🔄 Google Cybersecurity Professional Certificate — In Progress
+- ✅ Module 1: Foundations of Cybersecurity — Complete
+- ✅ Module 2: Play It Safe: Manage Security Risks — Complete (Mar 10, 2026) | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9)
+- 🔄 Google Cybersecurity Professional Certificate — Full Certificate In Progress
 - ⏳ CompTIA Security+ — Upcoming
 
 ---
@@ -117,7 +118,7 @@ gaps. Provided prioritized remediation recommendations.
 | Module | Topic | Status |
 |--------|-------|--------|
 | 1 | Foundations of Cybersecurity | ✅ Complete |
-| 2 | Security Risk Management | 🔄 In Progress |
+| 2 | Play It Safe: Manage Security Risks | ✅ Complete — Mar 10, 2026 |
 | 3 | Networks and Network Security | ⏳ Upcoming |
 | 4 | Linux and SQL | ⏳ Upcoming |
 | 5 | Assets, Threats and Vulnerabilities | ⏳ Upcoming |
