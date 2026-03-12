@@ -1,61 +1,132 @@
-# 👋 Hi, I'm Olayinka
-## Aspiring Cybersecurity Analyst
-
-🎯 Currently completing the Google Cybersecurity
-Professional Certificate on Coursera
+# Google Cybersecurity Professional Certificate — Project Portfolio
+**Olayinka Abimbowo | Aspiring Cybersecurity Analyst | Canada**
 
 ---
 
-## 📋 Professional Statement
+## 🎯 Objective
 
-I am an aspiring cybersecurity professional genuinely 
-interested in the tactical thinking required to identify 
-potential risks, threats, and vulnerabilities that could 
-compromise an organization's confidentiality, integrity, 
-and availability. I value protecting organizations and 
-their data and ensuring security is applied equitably. 
-I am actively developing my technical skills, problem 
-solving ability, and time management to support those 
-security goals in both private sector and government 
-environments.
+This portfolio documents my hands-on learning journey through the 
+Google Cybersecurity Professional Certificate. Each module includes 
+real projects, security audits, and labs designed to build practical 
+analyst skills. My focus is on developing the technical and analytical 
+abilities required to work as a Security Operations Center (SOC) 
+Analyst or Junior Cybersecurity Analyst in both private sector and 
+government environments.
 
 ---
 
-## 🛡️ Certifications In Progress
-- 📚 Google Cybersecurity Professional Certificate
-- 📚 CompTIA Security+ (upcoming)
+## 🛡️ Projects Completed
+
+### Project 1 — Botium Toys Internal Security Audit
+📁 [View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Module-2-Security-Audit)
+
+**Objective:** Conduct a full internal security audit for a fictional 
+toy company to assess existing controls and compliance gaps.
+
+**Skills Demonstrated:**
+- Completed a full Controls Assessment Checklist across 14 controls
+- Assessed compliance against PCI DSS, GDPR, and SOC frameworks
+- Identified critical gaps including missing encryption, no IDS,
+  no disaster recovery plan, and no least privilege controls
+- Wrote formal recommendations to the IT Manager
+- Applied NIST Cybersecurity Framework principles throughout
+
+**Tools and Frameworks Used:**
+- NIST Cybersecurity Framework
+- CIA Triad
+- PCI DSS, GDPR, SOC compliance frameworks
+- Security audit methodology
+
+**Outcome:** Identified 8 missing critical controls and 3 compliance 
+gaps. Provided prioritized remediation recommendations.
 
 ---
 
-## 💻 Skills Being Developed
-- SIEM Tools: Splunk, Google Chronicle
-- Languages: Python, SQL, Linux/Bash
-- Tools: Wireshark, Suricata
-- Frameworks: NIST, CIA Triad, Incident Response
+## 📚 Skills Learned
+
+### Module 1 — Foundations of Cybersecurity
+- Understanding of the CIA Triad — Confidentiality, Integrity, 
+  Availability
+- History and evolution of cyber attacks
+- Core responsibilities of a security analyst
+- Threat actors, vulnerabilities, and risk concepts
+- Introduction to SIEM tools
+
+### Module 2 — Security Risk Management (In Progress)
+- Security frameworks and controls
+- NIST Cybersecurity Framework (CSF)
+- OWASP security principles
+- Security audits and compliance assessments
+- PCI DSS, GDPR, SOC frameworks
+- Control categories — Administrative, Technical, Physical
 
 ---
 
-## 📁 Portfolio Progress
+## 🔧 Tools Used
+
+### Network Analysis
+<div>
+<img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
+<img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
+</div>
+
+### SIEM
+<div>
+<img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
+<img src="https://img.shields.io/badge/-Google_Chronicle-4285F4?&style=for-the-badge&logo=Google&logoColor=white" />
+</div>
+
+### Languages (In Development)
+<div>
+<img src="https://img.shields.io/badge/-Python-3776AB?&style=for-the-badge&logo=Python&logoColor=white" />
+<img src="https://img.shields.io/badge/-SQL-4479A1?&style=for-the-badge&logo=MySQL&logoColor=white" />
+<img src="https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=Linux&logoColor=black" />
+</div>
+
+---
+
+## 📜 Certifications
+
+<div>
+<img src="https://img.shields.io/badge/-Google_Cybersecurity_Certificate-4285F4?&style=for-the-badge&logo=Google&logoColor=white" />
+<img src="https://img.shields.io/badge/-CompTIA_Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+</div>
+
+- 🔄 Google Cybersecurity Professional Certificate — In Progress
+- ⏳ CompTIA Security+ — Upcoming
+
+---
+
+## 📸 Project Screenshots
+
+### Botium Toys Security Audit
+
+*Ref 1: Controls Assessment Checklist*
+![Controls Assessment](./Module-2-Security-Audit/administrative-controls-table.png)
+
+*Ref 2: Compliance Assessment*
+![Compliance Assessment](./Module-2-Security-Audit/compliance-pcidss.png)
+
+*Ref 3: NIST Framework*
+![NIST Framework](./Module-2-Security-Audit/nist-csf-six-functions.png)
+
+---
+
+## 📈 Portfolio Progress
+
 | Module | Topic | Status |
 |--------|-------|--------|
 | 1 | Foundations of Cybersecurity | ✅ Complete |
 | 2 | Security Risk Management | 🔄 In Progress |
-| 3 | Networks & Network Security | ⏳ Upcoming |
+| 3 | Networks and Network Security | ⏳ Upcoming |
 | 4 | Linux and SQL | ⏳ Upcoming |
-| 5 | Assets, Threats & Vulnerabilities | ⏳ Upcoming |
+| 5 | Assets, Threats and Vulnerabilities | ⏳ Upcoming |
 | 6 | Detection and Response | ⏳ Upcoming |
 | 7 | Python Automation | ⏳ Upcoming |
 | 8 | Job Preparation | ⏳ Upcoming |
 
 ---
 
-## 🎯 Target Roles
-- SOC Analyst
-- Information Security Analyst
-- Cybersecurity Analyst
-- IT Security Specialist
-
----
-
 ## 📫 Connect With Me
-- LinkedIn: (https://www.linkedin.com/in/olayinka-abimbowo)
+- 🔗 LinkedIn: https://www.linkedin.com/in/olayinka-abimbowo-b3369b2b0
+- 📁 GitHub: https://github.com/Halo-hub501
