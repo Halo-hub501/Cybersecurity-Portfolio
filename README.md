@@ -102,14 +102,11 @@ gaps. Provided prioritized remediation recommendations.
 ### Botium Toys Security Audit
 
 *Ref 1: Controls Assessment Checklist*
-![Controls Assessment](./Module-2-Security-Audit/administrative-controls-table.png)
-
+![Controls Assessment](./Security-Audit-Botium-Toys/administrative-controls-table.png)
 *Ref 2: Compliance Assessment*
-![Compliance Assessment](./Module-2-Security-Audit/compliance-pcidss.png)
-
+![Compliance Assessment](./Security-Audit-Botium-Toys/compliance-pcidss.png)
 *Ref 3: NIST Framework*
-![NIST Framework](./Module-2-Security-Audit/nist-csf-six-functions.png)
-
+![NIST Framework](./Security-Audit-Botium-Toys/nist-csf-six-functions.png)
 ---
 
 ## 📈 Portfolio Progress
