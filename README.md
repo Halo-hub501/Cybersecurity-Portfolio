@@ -18,8 +18,7 @@ government environments.
 ## 🛡️ Projects Completed
 
 ### Project 1 — Botium Toys Internal Security Audit
-📁 [View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Module-2-Security-Audit)
-
+📁[View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Security-Audit-Botium-Toys)
 **Objective:** Conduct a full internal security audit for a fictional 
 toy company to assess existing controls and compliance gaps.
 
