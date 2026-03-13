@@ -18,7 +18,8 @@ government environments.
 ## 🛡️ Projects Completed
 
 ### Project 1 — Botium Toys Internal Security Audit
-📁[View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Security-Audit-Botium-Toys)
+📁 [View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Security-Audit-Botium-Toys)
+
 **Objective:** Conduct a full internal security audit for a fictional 
 toy company to assess existing controls and compliance gaps.
 
@@ -101,12 +102,18 @@ gaps. Provided prioritized remediation recommendations.
 
 ### Botium Toys Security Audit
 
-*Ref 1: Controls Assessment Checklist*
-![Controls Assessment](./Security-Audit-Botium-Toys/administrative-controls-table.png)
-*Ref 2: Compliance Assessment*
-![Compliance Assessment](./Security-Audit-Botium-Toys/compliance-pcidss.png)
-*Ref 3: NIST Framework*
-![NIST Framework](./Security-Audit-Botium-Toys/nist-csf-six-functions.png)
+*Ref 1: Administrative Controls*
+![Administrative Controls](./Security-Audit-Botium-Toys/administrative-controls-table.png)
+
+*Ref 2: Technical Controls*
+![Technical Controls](./Security-Audit-Botium-Toys/technical-controls-table.png)
+
+*Ref 3: Physical Controls*
+![Physical Controls](./Security-Audit-Botium-Toys/physical-controls-full.png)
+
+*Ref 4: Control Categories*
+![Control Categories](./Security-Audit-Botium-Toys/controls-categories-overview.png)
+
 ---
 
 ## 📈 Portfolio Progress
@@ -127,3 +134,6 @@ gaps. Provided prioritized remediation recommendations.
 ## 📫 Connect With Me
 - 🔗 LinkedIn: https://www.linkedin.com/in/olayinka-abimbowo-b3369b2b0
 - 📁 GitHub: https://github.com/Halo-hub501
+```
+
+---
