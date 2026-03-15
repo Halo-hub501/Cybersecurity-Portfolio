@@ -103,18 +103,11 @@ gaps. Provided prioritized remediation recommendations.
 ### Botium Toys Security Audit
 
 *Ref 1: Administrative Controls*
-![Administrative Controls](./Security-Audit-Botium-Toys/administrative-controls-table.png)
-
+![Administrative Controls](Security-Audit-Botium-Toys/administrative-control.png)
 *Ref 2: Technical Controls*
-![Technical Controls](./Security-Audit-Botium-Toys/technical-controls-table.png)
-
-*Ref 3: Physical Controls*
-![Physical Controls](./Security-Audit-Botium-Toys/physical-controls-full.png)
-
-*Ref 4: Control Categories*
-![Control Categories](./Security-Audit-Botium-Toys/controls-categories-overview.png)
-
----
+![Technical Controls](Security-Audit-Botium-Toys/technical-controls.png)
+![Physical Controls](Security-Audit-Botium-Toys/physical-control.png)
+![Control Categories](Security-Audit-Botium-Toys/controls-categories.png)
 
 ## 📈 Portfolio Progress
 
