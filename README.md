@@ -5,12 +5,12 @@
 
 ## 🎯 Objective
 
-This portfolio documents my hands-on learning journey through the 
-Google Cybersecurity Professional Certificate. Each module includes 
-real projects, security audits, and labs designed to build practical 
-analyst skills. My focus is on developing the technical and analytical 
-abilities required to work as a Security Operations Center (SOC) 
-Analyst or Junior Cybersecurity Analyst in both private sector and 
+This portfolio documents my hands-on learning journey through the
+Google Cybersecurity Professional Certificate. Each module includes
+real projects, security audits, and labs designed to build practical
+analyst skills. My focus is on developing the technical and analytical
+abilities required to work as a Security Operations Center (SOC)
+Analyst or Junior Cybersecurity Analyst in both private sector and
 government environments.
 
 ---
@@ -18,9 +18,10 @@ government environments.
 ## 🛡️ Projects Completed
 
 ### Project 1 — Botium Toys Internal Security Audit
+
 📁 [View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Security-Audit-Botium-Toys)
 
-**Objective:** Conduct a full internal security audit for a fictional 
+**Objective:** Conduct a full internal security audit for a fictional
 toy company to assess existing controls and compliance gaps.
 
 **Skills Demonstrated:**
@@ -37,7 +38,7 @@ toy company to assess existing controls and compliance gaps.
 - PCI DSS, GDPR, SOC compliance frameworks
 - Security audit methodology
 
-**Outcome:** Identified 8 missing critical controls and 3 compliance 
+**Outcome:** Identified 8 missing critical controls and 3 compliance
 gaps. Provided prioritized remediation recommendations.
 
 ---
@@ -104,10 +105,17 @@ gaps. Provided prioritized remediation recommendations.
 
 *Ref 1: Administrative Controls*
 ![Administrative Controls](Security-Audit-Botium-Toys/administrative-control.png)
+
 *Ref 2: Technical Controls*
 ![Technical Controls](Security-Audit-Botium-Toys/technical-controls.png)
+
+*Ref 3: Physical Controls*
 ![Physical Controls](Security-Audit-Botium-Toys/physical-control.png)
+
+*Ref 4: Control Categories*
 ![Control Categories](Security-Audit-Botium-Toys/controls-categories.png)
+
+---
 
 ## 📈 Portfolio Progress
 
@@ -127,6 +135,3 @@ gaps. Provided prioritized remediation recommendations.
 ## 📫 Connect With Me
 - 🔗 LinkedIn: https://www.linkedin.com/in/olayinka-abimbowo-b3369b2b0
 - 📁 GitHub: https://github.com/Halo-hub501
-```
-
----
