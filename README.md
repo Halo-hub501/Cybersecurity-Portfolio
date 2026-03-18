@@ -41,6 +41,30 @@ toy company to assess existing controls and compliance gaps.
 **Outcome:** Identified 8 missing critical controls and 3 compliance
 gaps. Provided prioritized remediation recommendations.
 
+### Project 2 — Networks and Network Security (Module 3)
+
+📁 [View Full Project](https://github.com/Halo-hub501/Cybersecurity-Portfolio/tree/main/Networks-and-Network-Security)
+
+**Objective:** Apply network security concepts through four hands-on projects covering attack analysis, hardening, and incident response.
+
+**Projects Completed:**
+
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | [Network Hardening Analysis](Networks-and-Network-Security/01-network-hardening-analysis/network-hardening-report.md) | Post-breach vulnerability assessment for a social media org; identified 4 critical gaps and recommended controls |
+| 2 | [Network Attack Analysis — SYN Flood](Networks-and-Network-Security/02-network-attack-analysis/attack-analysis-report.md) | Analyzed Wireshark TCP log to identify a SYN flood DoS attack and recommended mitigations |
+| 3 | [OS Hardening Techniques](Networks-and-Network-Security/03-os-hardening-techniques/os-hardening-report.md) | Investigated brute-force attack on a web app; recommended account lockout, MFA, and offboarding controls |
+| 4 | [NIST CSF Incident Response](Networks-and-Network-Security/04-nist-csf-incident-response/incident-response-report.md) | Applied all 5 NIST CSF functions (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood incident |
+
+**Tools and Frameworks Used:**
+- NIST Cybersecurity Framework (all 5 functions)
+- TCP/IP and OSI model analysis
+- Network protocol analysis (DNS, HTTP, TCP, ICMP)
+- Wireshark log interpretation
+- OS and network hardening checklists
+
+**Outcome:** Four professional analyst reports demonstrating practical skills in network attack identification, hardening, and structured incident response.
+
 ---
 
 ## 📚 Skills Learned
@@ -59,6 +83,14 @@ gaps. Provided prioritized remediation recommendations.
 - Security audits and compliance assessments
 - PCI DSS, GDPR, SOC frameworks
 - Control categories — Administrative, Technical, Physical
+
+### Module 3 — Connect and Protect: Networks and Network Security ✅
+- Network architecture: TCP/IP model, OSI model, common protocols
+- Network attack types: DoS, DDoS, SYN flood, ICMP flood, DNS poisoning, packet sniffing
+- Network hardening: firewall rules, port filtering, network segmentation, MFA
+- OS hardening: patch management, account lockout policies, principle of least privilege
+- Incident response using NIST CSF across all 5 functions
+- Wireshark TCP log analysis for attack identification
 
 ---
 
@@ -123,7 +155,7 @@ gaps. Provided prioritized remediation recommendations.
 |--------|-------|--------|
 | 1 | Foundations of Cybersecurity | ✅ Complete |
 | 2 | Play It Safe: Manage Security Risks | ✅ Complete — Mar 10, 2026 |
-| 3 | Networks and Network Security | ⏳ Upcoming |
+| 3 | Networks and Network Security | ✅ Complete — Mar 18, 2026 |
 | 4 | Linux and SQL | ⏳ Upcoming |
 | 5 | Assets, Threats and Vulnerabilities | ⏳ Upcoming |
 | 6 | Detection and Response | ⏳ Upcoming |
