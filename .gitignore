@@ -1,0 +1,4 @@
+CLAUDE.md
+.tmp/
+.env
+*.log
