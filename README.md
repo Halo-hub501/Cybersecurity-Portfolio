@@ -49,12 +49,13 @@ gaps. Provided prioritized remediation recommendations.
 
 **Projects Completed:**
 
-| # | Project | Description |
-|---|---------|-------------|
-| 1 | [Network Hardening Analysis](Networks-and-Network-Security/01-network-hardening-analysis/network-hardening-report.md) | Post-breach vulnerability assessment for a social media org; identified 4 critical gaps and recommended controls |
-| 2 | [Network Attack Analysis — SYN Flood](Networks-and-Network-Security/02-network-attack-analysis/attack-analysis-report.md) | Analyzed Wireshark TCP log to identify a SYN flood DoS attack and recommended mitigations |
-| 3 | [OS Hardening Techniques](Networks-and-Network-Security/03-os-hardening-techniques/os-hardening-report.md) | Investigated brute-force attack on a web app; recommended account lockout, MFA, and offboarding controls |
-| 4 | [NIST CSF Incident Response](Networks-and-Network-Security/04-nist-csf-incident-response/incident-response-report.md) | Applied all 5 NIST CSF functions (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood incident |
+| # | Project | Report Type | Description |
+|---|---------|-------------|-------------|
+| 1 | [DNS and ICMP Traffic Analysis](Networks-and-Network-Security/01-dns-icmp-traffic-analysis/dns-icmp-traffic-analysis-report.md) | tcpdump Incident Report | Analyzed a tcpdump log to identify why a website was unreachable — DNS server port 53 returning ICMP "unreachable" errors |
+| 2 | [SYN Flood Attack Analysis](Networks-and-Network-Security/02-syn-flood-attack-analysis/attack-analysis-report.md) | Wireshark Incident Report | Analyzed Wireshark TCP log to identify a SYN flood DoS attack against a travel agency's web server |
+| 3 | [Brute Force and Malware Injection](Networks-and-Network-Security/03-brute-force-malware-injection/brute-force-malware-injection-report.md) | Security Incident Report | Investigated a two-stage attack: brute-force admin login followed by malware injection into a bakery website |
+| 4 | [Security Risk Assessment](Networks-and-Network-Security/04-security-risk-assessment/network-hardening-report.md) | Network Hardening Report | Post-breach assessment for a social media org; identified 4 vulnerabilities and recommended hardening controls |
+| 5 | [NIST CSF Incident Report — DDoS ICMP Flood](Networks-and-Network-Security/05-nist-csf-ddos-icmp-analysis/incident-response-report.md) | NIST CSF Analysis | Applied all 5 NIST CSF functions to a DDoS/ICMP flood attack on a multimedia company |
 
 **Tools and Frameworks Used:**
 - NIST Cybersecurity Framework (all 5 functions)
