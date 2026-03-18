@@ -16,9 +16,9 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 
 | # | Module | Status | Projects |
 |---|--------|--------|---------|
-| 1 | Foundations of Cybersecurity | ✅ Completed | [Botium Toys Security Audit](projects/module-1-foundations/botium-toys-audit/) |
-| 2 | Play It Safe: Manage Security Risks | ✅ Completed | Security frameworks & risk management |
-| 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [4 Network Security Projects](projects/module-3-networks/) |
+| 1 | Foundations of Cybersecurity | ✅ Completed | [Professional Statement](projects/module-1-foundations/professional-statement/) |
+| 2 | Play It Safe: Manage Security Risks | ✅ Completed | [Botium Toys Security Audit](projects/module-2-play-it-safe/botium-toys-audit/) |
+| 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
 | 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | — |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
@@ -29,8 +29,14 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 
 ## 🗂️ Projects
 
-### Module 1 — Foundations
-**[Botium Toys Internal Security Audit](projects/module-1-foundations/botium-toys-audit/)**
+### Module 1 — Foundations of Cybersecurity
+**[Professional Statement](projects/module-1-foundations/professional-statement/)**
+Drafted a professional statement communicating my strengths, values, and career goals in cybersecurity — designed to introduce myself to potential employers.
+
+---
+
+### Module 2 — Play It Safe: Manage Security Risks
+**[Botium Toys Internal Security Audit](projects/module-2-play-it-safe/botium-toys-audit/)**
 Conducted a full internal security audit for a fictional toy company expanding its online presence. Assessed administrative, technical, and physical controls; identified PCI DSS, GDPR, and SOC compliance gaps; delivered prioritized remediation recommendations.
 - Controls checklist (20 controls evaluated)
 - Compliance gap analysis (PCI DSS, GDPR, SOC 1/2)
@@ -38,18 +44,22 @@ Conducted a full internal security audit for a fictional toy company expanding i
 
 ---
 
-### Module 3 — Network Security
-**[Network Hardening Analysis](projects/module-3-networks/01-network-hardening-analysis/)**
-Analyzed a post-breach network and identified four key vulnerabilities. Recommended controls including MFA, firewall hardening, IDS deployment, and password policy enforcement.
+### Module 3 — Connect and Protect: Networks & Network Security
 
-**[Network Attack Analysis — SYN Flood](projects/module-3-networks/02-network-attack-analysis/)**
-Analyzed a Wireshark TCP log to identify a SYN flood DoS attack. Explained the attack mechanism at the protocol level and provided technical mitigation recommendations.
+**[1. DNS and ICMP Traffic Analysis](projects/module-3-networks/01-dns-icmp-traffic-analysis/)**
+Analyzed a tcpdump log to investigate a website outage. Identified that the DNS server's port 53 was returning ICMP "unreachable" errors, blocking all DNS resolution. Report type: tcpdump Incident Report.
 
-**[OS Hardening Techniques](projects/module-3-networks/03-os-hardening-techniques/)**
-Investigated a brute-force attack on a web application. Identified how weak credentials and missing account lockout policies allowed unauthorized access. Recommended hardening controls including MFA, lockout policies, and offboarding procedures.
+**[2. SYN Flood Attack Analysis](projects/module-3-networks/02-syn-flood-attack-analysis/)**
+Analyzed a Wireshark TCP log to identify a SYN flood DoS attack against a travel agency's web server. Explained the TCP handshake exploitation and recommended mitigations. Report type: Wireshark Incident Report.
 
-**[NIST CSF Incident Response — DDoS](projects/module-3-networks/04-nist-csf-incident-response/)**
-Applied the full NIST Cybersecurity Framework (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood incident. Documented the attack, response actions, and post-incident improvements.
+**[3. Brute Force and Malware Injection](projects/module-3-networks/03-brute-force-malware-injection/)**
+Investigated a two-stage attack: a former employee brute-forced the admin login, then injected malware into the website that redirected visitors to a fake site and delivered trojan downloads. Report type: Security Incident Report.
+
+**[4. Security Risk Assessment](projects/module-3-networks/04-security-risk-assessment/)**
+Post-breach network assessment for a social media organization. Identified four critical vulnerabilities (no MFA, no firewall rules, password sharing, default credentials) and provided hardening recommendations. Report type: Network Hardening Report.
+
+**[5. NIST CSF Incident Report — DDoS ICMP Flood](projects/module-3-networks/05-nist-csf-ddos-icmp-analysis/)**
+Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood attack on a multimedia company. Documented the full incident response and post-incident improvements. Report type: NIST CSF Analysis.
 
 ---
 
