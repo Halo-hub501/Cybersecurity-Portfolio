@@ -4,6 +4,9 @@
 
 I'm transitioning into cybersecurity with a focus on becoming a **Tier 1 SOC Analyst**. I'm building hands-on skills through the Google Cybersecurity Professional Certificate and documenting real project work here as I go.
 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/olayinka-abimbowo-b3369b2b0)
+- 📁 [GitHub](https://github.com/Halo-hub501)
+
 ---
 
 ## 🎯 Career Goal
@@ -47,40 +50,41 @@ Conducted a full internal security audit for a fictional toy company expanding i
 ### Module 3 — Connect and Protect: Networks & Network Security
 
 **[1. DNS and ICMP Traffic Analysis](projects/module-3-networks/01-dns-icmp-traffic-analysis/)**
-Analyzed a tcpdump log to investigate a website outage. Identified that the DNS server's port 53 was returning ICMP "unreachable" errors, blocking all DNS resolution. Report type: tcpdump Incident Report.
+Analyzed a tcpdump log to investigate a website outage. Identified that the DNS server's port 53 was returning ICMP "unreachable" errors, blocking all DNS resolution.
 
 **[2. SYN Flood Attack Analysis](projects/module-3-networks/02-syn-flood-attack-analysis/)**
-Analyzed a Wireshark TCP log to identify a SYN flood DoS attack against a travel agency's web server. Explained the TCP handshake exploitation and recommended mitigations. Report type: Wireshark Incident Report.
+Analyzed a Wireshark TCP log to identify a SYN flood DoS attack against a travel agency's web server. Explained the TCP handshake exploitation and recommended mitigations.
 
 **[3. Brute Force and Malware Injection](projects/module-3-networks/03-brute-force-malware-injection/)**
-Investigated a two-stage attack: a former employee brute-forced the admin login, then injected malware into the website that redirected visitors to a fake site and delivered trojan downloads. Report type: Security Incident Report.
+Investigated a two-stage attack: a former employee brute-forced the admin login, then injected malware into the website that redirected visitors to a fake site and delivered trojan downloads.
 
 **[4. Security Risk Assessment](projects/module-3-networks/04-security-risk-assessment/)**
-Post-breach network assessment for a social media organization. Identified four critical vulnerabilities (no MFA, no firewall rules, password sharing, default credentials) and provided hardening recommendations. Report type: Network Hardening Report.
+Post-breach network assessment for a social media organization. Identified four critical vulnerabilities (no MFA, no firewall rules, password sharing, default credentials) and provided hardening recommendations.
 
 **[5. NIST CSF Incident Report — DDoS ICMP Flood](projects/module-3-networks/05-nist-csf-ddos-icmp-analysis/)**
-Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood attack on a multimedia company. Documented the full incident response and post-incident improvements. Report type: NIST CSF Analysis.
+Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover) to a DDoS/ICMP flood attack on a multimedia company.
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Tools & Technologies
 
-### Security Practices
-- Security auditing and risk assessment
-- Controls and compliance evaluation (PCI DSS, GDPR, SOC 1/2)
-- NIST Cybersecurity Framework (CSF)
+### Network Analysis
+![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white)
+![Suricata](https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white)
+
+### SIEM
+![Splunk](https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white)
+![Chronicle](https://img.shields.io/badge/-Google_Chronicle-4285F4?&style=for-the-badge&logo=Google&logoColor=white)
+
+### Languages (In Development)
+![Python](https://img.shields.io/badge/-Python-3776AB?&style=for-the-badge&logo=Python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?&style=for-the-badge&logo=MySQL&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=Linux&logoColor=black)
+
+### Frameworks
+- NIST Cybersecurity Framework (CSF) — all 5 functions
 - CIA Triad (Confidentiality, Integrity, Availability)
-- Incident response planning
-- Network attack analysis and hardening
-
-### Tools & Technologies
-| Category | Tools |
-|----------|-------|
-| Network Analysis | Wireshark, Suricata |
-| SIEM Platforms | Splunk, Google Chronicle *(actively learning)* |
-| OS & Command Line | Linux (Bash), Windows |
-| Programming | Python, SQL *(in progress via Google Cert Module 4)* |
-| Frameworks | NIST CSF, CIA Triad, PCI DSS, GDPR |
+- PCI DSS, GDPR, SOC 1/2 compliance
 
 ---
 
@@ -93,7 +97,7 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 | 1 | Foundations of Cybersecurity | Mar 9, 2026 | [Verify](https://coursera.org/verify/M6YX7WL9BDAB) |
 | 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
-| 4 | Tools of the Trade: Linux and SQL | ⬜ In Progress | — |
+| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | — |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
@@ -113,6 +117,7 @@ I'm actively looking for entry-level cybersecurity opportunities and open to con
 
 - 📍 Canada
 - 💼 Open to: Junior SOC Analyst, Security Analyst Intern, IT Security roles
+- 🔗 [LinkedIn](https://www.linkedin.com/in/olayinka-abimbowo-b3369b2b0)
 
 ---
 
