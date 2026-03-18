@@ -86,9 +86,23 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 
 ## 📜 Certifications
 
+### Google Cybersecurity Professional Certificate — Course Completions
+
+| # | Course | Completed | Verify |
+|---|--------|-----------|--------|
+| 1 | Foundations of Cybersecurity | Mar 9, 2026 | [Verify](https://coursera.org/verify/M6YX7WL9BDAB) |
+| 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
+| 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
+| 4 | Tools of the Trade: Linux and SQL | ⬜ In Progress | — |
+| 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
+| 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
+| 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
+| 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
+
+### Other Certifications
+
 | Certification | Status |
 |---------------|--------|
-| Google Cybersecurity Professional Certificate | 🔄 In Progress (3/8 modules complete) |
 | CompTIA Security+ | ⬜ Planned |
 
 ---
