@@ -22,7 +22,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 1 | Foundations of Cybersecurity | ✅ Completed | [Professional Statement](projects/module-1-foundations/professional-statement/) |
 | 2 | Play It Safe: Manage Security Risks | ✅ Completed | [Botium Toys Security Audit](projects/module-2-play-it-safe/botium-toys-audit/) |
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [4 Linux Labs](projects/module-4-linux-sql/) |
+| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [5 Linux Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
@@ -80,6 +80,9 @@ Navigated the Linux Filesystem Hierarchy Standard using `pwd`, `ls`, `cd`, `cat`
 **[4. Filter with grep](projects/module-4-linux-sql/04-filter-with-grep/)**
 Used `grep` and piping (`|`) to search log files and user data files for specific strings. Identified 6 error entries in a server log, filtered file listings by name pattern, and located a deleted user and HR additions across quarterly user reports.
 
+**[5. Manage Files with Linux Commands](projects/module-4-linux-sql/05-manage-files-linux-commands/)**
+Organized the `/home/analyst` directory by creating a `logs` subdirectory, removing the `temp` directory, moving `Q3patches.txt` to `reports`, deleting an unused file, creating a new `tasks.txt` file, and editing it with the nano text editor.
+
 ---
 
 ## 🛠️ Tools & Technologies
@@ -115,7 +118,7 @@ Used `grep` and piping (`|`) to search log files and user data files for specifi
 | 1 | Foundations of Cybersecurity | Mar 9, 2026 | [Verify](https://coursera.org/verify/M6YX7WL9BDAB) |
 | 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [4 Linux Labs](projects/module-4-linux-sql/) |
+| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [5 Linux Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
