@@ -6,6 +6,12 @@
 
 ---
 
+## Lab Completion
+
+![Lab completion screenshot](assets/lab-completion.png)
+
+---
+
 ## Objective
 
 Use Linux commands to examine and manage file and directory permissions in the `/home/researcher2/projects` directory — a core authorization skill for security analysts responsible for ensuring that the correct users have the correct access to files.
