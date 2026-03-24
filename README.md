@@ -22,7 +22,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 1 | Foundations of Cybersecurity | ✅ Completed | [Professional Statement](projects/module-1-foundations/professional-statement/) |
 | 2 | Play It Safe: Manage Security Risks | ✅ Completed | [Botium Toys Security Audit](projects/module-2-play-it-safe/botium-toys-audit/) |
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | — |
+| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [3 Linux Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
@@ -66,6 +66,19 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 
 ---
 
+### Module 4 — Tools of the Trade: Linux and SQL
+
+**[1. Install Software in a Linux Distribution](projects/module-4-linux-sql/01-install-software-linux/)**
+Used the APT package manager to install, uninstall, and verify software in a Debian-based Linux environment. Managed the full lifecycle of Suricata and tcpdump — two tools directly used in security monitoring and network analysis.
+
+**[2. Examine Input/Output in the Linux Shell](projects/module-4-linux-sql/02-examine-input-output-linux-shell/)**
+Used `echo` and `expr` in the Bash shell to generate output and perform integer calculations. Applied the `expr` command to a realistic analyst scenario: calculating total annual login attempts from monthly averages (3,500/month × 12 = 42,000/year).
+
+**[3. Find Files with Linux Commands](projects/module-4-linux-sql/03-find-files-linux-commands/)**
+Navigated the Linux Filesystem Hierarchy Standard using `pwd`, `ls`, `cd`, `cat`, and `head`. Located and read employee user records from a structured data file, and analyzed a server log to identify 3 warning messages within the first 10 lines.
+
+---
+
 ## 🛠️ Tools & Technologies
 
 ### Network Analysis
@@ -76,10 +89,12 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 ![Splunk](https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white)
 ![Chronicle](https://img.shields.io/badge/-Google_Chronicle-4285F4?&style=for-the-badge&logo=Google&logoColor=white)
 
+### Operating Systems & Shell
+![Linux](https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=Linux&logoColor=black)
+
 ### Languages (In Development)
 ![Python](https://img.shields.io/badge/-Python-3776AB?&style=for-the-badge&logo=Python&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?&style=for-the-badge&logo=MySQL&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=Linux&logoColor=black)
 
 ### Frameworks
 - NIST Cybersecurity Framework (CSF) — all 5 functions
@@ -97,7 +112,7 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 | 1 | Foundations of Cybersecurity | Mar 9, 2026 | [Verify](https://coursera.org/verify/M6YX7WL9BDAB) |
 | 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | — |
+| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [3 Linux Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
