@@ -1,23 +1,20 @@
-# Lab 6: Manage Authorization
+# File Permissions in Linux
 
 **Course:** Tools of the Trade: Linux and SQL (Course 4)
-**Module:** Linux commands in the Bash shell
-**Platform:** Google Skills Boost
+**Certificate:** Google Cybersecurity Professional Certificate
 **Status:** ✅ Completed
 
 ---
 
-## Objective
+## Project Description
 
-Use Linux commands to examine and update file and directory permissions for a research team environment. The goal is to ensure that only authorized users have the correct level of access — a core principle of the least-privilege security model.
-
-**Working directory:** `/home/researcher2/projects`
+As a security professional working with a research team, part of my role is to ensure users are authorized with the appropriate permissions to keep the system secure. In this project, I examined existing file and directory permissions within the `/home/researcher2/projects` directory to determine whether they matched the level of authorization that should be granted. Where permissions did not align with organizational policy, I used Linux commands to modify them and remove unauthorized access.
 
 ---
 
-## Task 1 — Check File and Directory Details
+## Check File and Directory Details
 
-Used `ls -la` to view all files, including hidden ones, with their full permission strings.
+I used the following command to list all contents of the `projects` directory, including hidden files, along with their permission strings:
 
 ```bash
 researcher2@9e8bcde30f6f:~/projects$ ls -la
@@ -35,81 +32,31 @@ drwx--x--- 2 researcher2 research_team 4096 Mar 24 20:56 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
 ```
 
-Then used `ls -l` to check visible files only (standard view used throughout the lab):
-
-```bash
-researcher2@9e8bcde30f6f:~/projects$ ls -l
-```
-
-```
-total 20
-drwx--x--- 2 researcher2 research_team 4096 Mar 24 20:56 drafts
--rw-rw-rw- 1 researcher2 research_team   46 Mar 24 20:56 project_k.txt
--rw-r----- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
--rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_r.txt
--rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
-```
+The `ls` command with the `-la` option displays a detailed listing of all file contents and returns hidden files. The output indicates there is one subdirectory named `drafts`, one hidden file named `.project_x.txt`, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
 
 ---
 
-## Task 2 — Interpret the Permission String
+## Describe the Permissions String
 
-The 10-character permission string is structured as follows:
+The 10-character permission string can be deconstructed to determine who is authorized to access a file and what specific permissions they have. Each character represents the following:
 
-```
-d  rwx  r-x  ---
-│   │    │    │
-│   │    │    └── Other permissions
-│   │    └─────── Group permissions
-│   └──────────── Owner (user) permissions
-└──────────────── Type: d = directory, - = file
-```
+- **1st character** — File type: `d` = directory, `-` = regular file
+- **2nd–4th characters** — User (owner) permissions: `r` (read), `w` (write), `x` (execute), or `-` (not granted)
+- **5th–7th characters** — Group permissions: `r` (read), `w` (write), `x` (execute), or `-` (not granted)
+- **8th–10th characters** — Other permissions (all other system users): `r` (read), `w` (write), `x` (execute), or `-` (not granted)
 
-| Character | Meaning |
-|-----------|---------|
-| `r` | Read |
-| `w` | Write |
-| `x` | Execute (or enter, for directories) |
-| `-` | Permission not granted |
+**Example — `project_t.txt` (`-rw-rw-r--`):**
 
-**Example analysis — `project_k.txt` (`-rw-rw-rw-`):**
-- File (not directory)
-- Owner: read + write
-- Group: read + write
-- Other: read + write ← **others should not have write access**
+Since the first character is `-`, this indicates `project_t.txt` is a regular file, not a directory. The second, fifth, and eighth characters are all `r`, indicating that the user, group, and other all have read permissions. The third and sixth characters are `w`, indicating that only the user and group have write permissions. No one has execute permissions for this file.
 
 ---
 
-## Task 3 — Remove Write Permission for Others on `project_k.txt`
+## Change File Permissions
 
-The file had world-writable permissions, which violates the organization's policy.
+The organization determined that `other` should not have write access to any files. After reviewing the existing permissions, I identified that `project_k.txt` had write access granted to `other` (`-rw-rw-rw-`), which needed to be removed.
 
 ```bash
 researcher2@9e8bcde30f6f:~/projects$ chmod o-w project_k.txt
-researcher2@9e8bcde30f6f:~/projects$ ls -l
-```
-
-```
-total 20
-drwx--x--- 2 researcher2 research_team 4096 Mar 24 20:56 drafts
--rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_k.txt
--rw-r----- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
--rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_r.txt
--rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
-```
-
-| | Before | After |
-|---|--------|-------|
-| `project_k.txt` | `-rw-rw-rw-` | `-rw-rw-r--` ✅ |
-
----
-
-## Task 4 — Remove Group Read Permission on `project_m.txt`
-
-The research team (group) should not have read access to this file.
-
-```bash
-researcher2@9e8bcde30f6f:~/projects$ chmod g-r project_m.txt
 researcher2@9e8bcde30f6f:~/projects$ ls -la
 ```
 
@@ -120,75 +67,65 @@ drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 21:31 ..
 -rw--w---- 1 researcher2 research_team   46 Mar 24 20:56 .project_x.txt
 drwx--x--- 2 researcher2 research_team 4096 Mar 24 20:56 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_k.txt
--rw------- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
+-rw-r----- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
 ```
 
-| | Before | After |
-|---|--------|-------|
-| `project_m.txt` | `-rw-r-----` | `-rw-------` ✅ |
+The `chmod` command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from `other` for `project_k.txt` using `o-w`. After this, I used `ls -la` to verify the update — `project_k.txt` now shows `-rw-rw-r--`, confirming the change was applied correctly.
 
 ---
 
-## Task 5 — Fix Permissions on Hidden File `.project_x.txt`
+## Change File Permissions on a Hidden File
 
-This archived file should not be writable by anyone. Both the owner and group need to lose write access; the group also needs read access added for reference.
+The research team recently archived `.project_x.txt`. No one should have write access to this file, but the user and group should retain read access. I knew `.project_x.txt` was a hidden file because its name begins with a period (`.`).
 
 ```bash
 researcher2@9e8bcde30f6f:~/projects$ chmod u-w,g-w,g+r .project_x.txt
-researcher2@9e8bcde30f6f:~/projects$ ls -l
+researcher2@9e8bcde30f6f:~/projects$ ls -la
 ```
 
 ```
-total 20
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 20:56 .
+drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 21:31 ..
+-r--r----- 1 researcher2 research_team   46 Mar 24 20:56 .project_x.txt
 drwx--x--- 2 researcher2 research_team 4096 Mar 24 20:56 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_k.txt
--rw------- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
+-rw-r----- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
 ```
 
-| | Before | After |
-|---|--------|-------|
-| `.project_x.txt` | `-rw--w----` | `-r--r-----` ✅ |
-
-> **Note:** A single `chmod` call can apply multiple changes at once using comma-separated clauses: `u-w,g-w,g+r`
+In this example, I applied three permission changes in a single `chmod` command using comma-separated clauses. I removed write permissions from the user with `u-w`, removed write permissions from the group with `g-w`, and added read permissions to the group with `g+r`. The updated permission string `-r--r-----` confirms that neither the user nor the group can write to the file, while both retain read access.
 
 ---
 
-## Task 6 — Remove Group Execute Permission on `drafts/` Directory
+## Change Directory Permissions
 
-The `drafts` directory had group execute (`x`) set, which allows the group to enter the directory. Only the owner should have access.
+My organization requires that only the `researcher2` user has access to the `drafts` directory and its contents. This means the group should not have execute permissions on the directory, as execute on a directory controls the ability to enter it.
 
 ```bash
 researcher2@9e8bcde30f6f:~/projects$ chmod g-x drafts
-researcher2@9e8bcde30f6f:~/projects$
+researcher2@9e8bcde30f6f:~/projects$ ls -la
 ```
 
-| | Before | After |
-|---|--------|-------|
-| `drafts/` | `drwx--x---` | `drwx------` ✅ |
+```
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 20:56 .
+drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 21:31 ..
+-r--r----- 1 researcher2 research_team   46 Mar 24 20:56 .project_x.txt
+drwx------ 2 researcher2 research_team 4096 Mar 24 20:56 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Mar 24 20:56 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Mar 24 20:56 project_t.txt
+```
 
-> **Key concept:** Execute on a **directory** controls the ability to enter it (`cd`), not to run scripts. Removing `x` from the group locks them out entirely.
-
----
-
-## Summary of All Permission Changes
-
-| File / Directory | Original | Final | Change Made |
-|-----------------|----------|-------|-------------|
-| `project_k.txt` | `-rw-rw-rw-` | `-rw-rw-r--` | Removed write from others |
-| `project_m.txt` | `-rw-r-----` | `-rw-------` | Removed read from group |
-| `.project_x.txt` | `-rw--w----` | `-r--r-----` | Removed write from owner & group; added read to group |
-| `drafts/` | `drwx--x---` | `drwx------` | Removed execute from group |
+The output shows the updated permission listing for the directory. Line 1 indicates the current directory (`projects`), and line 2 indicates the parent directory (`home`). Line 3 is the hidden file `.project_x.txt`. Line 4 is the `drafts` directory, now showing `drwx------`, meaning only `researcher2` has execute permissions. It was previously determined that the group had execute permissions (`drwx--x---`), so I used `chmod g-x` to remove them. The `researcher2` user already had execute permissions, so no changes were needed for the user.
 
 ---
 
-## Key Takeaways
+## Summary
 
-- `ls -l` shows visible files with permissions; `ls -la` includes hidden files (prefixed with `.`)
-- `chmod` symbolic syntax: `u` = user/owner, `g` = group, `o` = others, `a` = all; `+` adds, `-` removes
-- Multiple permission changes can be chained in one command: `chmod u-w,g-w,g+r <file>`
-- **Execute on a directory** controls entry access, not just script execution
-- Authorization management enforces least privilege — users should only have the access their role requires
+I updated multiple file and directory permissions to align with the authorization requirements set by my organization for the `/home/researcher2/projects` directory. I began by using `ls -la` to examine the current permissions, including hidden files, which informed all subsequent decisions. I then used the `chmod` command to remove unauthorized write access from `other` on `project_k.txt`, restrict write access and correct read access on the hidden file `.project_x.txt`, and remove group execute permissions from the `drafts` directory so that only the `researcher2` user retains access.
