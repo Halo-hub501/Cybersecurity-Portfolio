@@ -20,6 +20,8 @@ I used the following command to list all contents of the `projects` directory, i
 researcher2@9e8bcde30f6f:~/projects$ ls -la
 ```
 
+![Terminal session — full lab commands and output](assets/terminal-session.png)
+
 ```
 total 32
 drwxr-xr-x 3 researcher2 research_team 4096 Mar 24 20:56 .
