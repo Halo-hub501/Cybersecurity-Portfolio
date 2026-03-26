@@ -14,18 +14,27 @@ As a security analyst working in Linux, you will frequently encounter commands a
 
 ## Task 1: Use `man` to Explore the `useradd` Command
 
-I needed to find which option sets an expiration date for a temporary user account. I used the `man` command to open the full manual page for `useradd`.
+I needed to find which option sets an expiration date for a temporary user account. I first used `whatis` to get a quick description of `cat`, then opened its full man page to understand the format before moving on to `useradd`.
 
 ```bash
 analyst@7dff71dc7035:~$ whatis cat
 cat (1)        - concatenate files and print on the standard output
 analyst@7dff71dc7035:~$ man cat
+```
+
+![Task 1 Step 1 — whatis cat and man cat manual page](assets/task1-whatis-man-cat.png)
+
+I then used `apropos` to search for commands related to files, and opened the `useradd` man page to find the expiration date option.
+
+```bash
+analyst@7dff71dc7035:~$ apropos -a first part file
+head (1)        - output the first part of files
 analyst@7dff71dc7035:~$ man useradd
 ```
 
-![Task 1 — Exploring man pages for cat and useradd](assets/task1-man-pages.png)
+![Task 1 Step 2 — apropos search and man useradd opening](assets/task1-man-useradd.png)
 
-The `man` command opens the full manual page for any command. Inside the `useradd` man page, I found:
+Inside the `useradd` man page, I found:
 
 ```
 -e, --expiredate EXPIRE_DATE
@@ -44,8 +53,6 @@ This confirmed that `-e` is the option used to set an expiration date. I pressed
 I used `whatis` to compare `rm` and `rmdir`, then `apropos` to search for the command to create a new group.
 
 ```bash
-analyst@7dff71dc7035:~$ apropos -a first part file
-head (1)        - output the first part of files
 analyst@7dff71dc7035:~$ whatis rm
 rm (1)          - remove files or directories
 analyst@7dff71dc7035:~$ whatis rmdir
@@ -55,7 +62,7 @@ analyst@7dff71dc7035:~$ apropos -a create new group
 groupadd (8)    - create a new group
 ```
 
-![Task 2 — Using whatis and apropos to find commands](assets/task2-whatis-apropos.png)
+![Task 2 — man useradd -e option, whatis rm/rmdir, and apropos groupadd](assets/task2-whatis-apropos.png)
 
 **What I learned:**
 - `whatis` gives a quick one-line description pulled from the man page
