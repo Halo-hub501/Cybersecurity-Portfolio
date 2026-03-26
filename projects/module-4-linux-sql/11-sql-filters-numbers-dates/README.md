@@ -22,6 +22,8 @@ FROM log_in_attempts
 WHERE login_date > '2022-05-09';
 ```
 
+![Task 1 Step 1 — Query and results for login_date > 2022-05-09](assets/task1-after-date.png)
+
 The `>` operator returns only records where the login date is strictly after the specified date, excluding 2022-05-09 itself. This returned **125 login attempts**.
 
 ---
@@ -34,6 +36,8 @@ FROM log_in_attempts
 WHERE login_date >= '2022-05-09';
 ```
 
+![Task 1 Step 2 — Results for login_date >= 2022-05-09](assets/task1-on-or-after-date.png)
+
 The `>=` operator includes the specified date in the results. Adding 2022-05-09 to the range increased the results to **165 login attempts** — the difference of 40 records represents logins that occurred on 2022-05-09 itself.
 
 ---
@@ -45,6 +49,8 @@ SELECT *
 FROM log_in_attempts
 WHERE login_date BETWEEN '2022-05-09' AND '2022-05-11';
 ```
+
+![Task 2 — Results for BETWEEN date range](assets/task2-between-dates.png)
 
 The `BETWEEN` operator filters results to include both the start and end dates. This narrowed the focus to **123 login attempts** made between 2022-05-09 and 2022-05-11, excluding anything before or after that window.
 
@@ -59,6 +65,8 @@ SELECT *
 FROM log_in_attempts
 WHERE login_time < '07:00:00';
 ```
+
+![Task 3 Step 1 — Logins before 07:00:00](assets/task3-before-7am.png)
 
 I filtered for logins made before the organization's typical start time of 07:00:00 to identify users logging in outside of normal hours. The fifth record returned had the username **eraab**.
 
