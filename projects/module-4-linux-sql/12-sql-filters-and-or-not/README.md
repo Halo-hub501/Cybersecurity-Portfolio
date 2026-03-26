@@ -1,4 +1,4 @@
-# SQL Filters with AND, OR, and NOT
+# Apply Filters to SQL Queries
 
 **Course:** Tools of the Trade: Linux and SQL (Course 4)
 **Certificate:** Google Cybersecurity Professional Certificate
@@ -8,11 +8,13 @@
 
 ## Project Description
 
-As a security analyst investigating suspicious login activity and preparing for a system update, I needed to retrieve specific records from both the `log_in_attempts` and `employees` tables. I applied the `AND`, `OR`, and `NOT` logical operators to combine multiple filter conditions in SQL queries, alongside the `LIKE` operator for pattern matching.
+As a security professional at a large organization, I investigated potential security issues involving login attempts and employee machines. I used SQL filters with the `AND`, `OR`, and `NOT` operators to query the `log_in_attempts` and `employees` tables in the organization's database, retrieving specific records needed to support the security investigation and plan system updates.
 
 ---
 
-## Task 1: Retrieve After-Hours Failed Login Attempts
+## Retrieve After-Hours Failed Login Attempts
+
+I needed to identify all failed login attempts that occurred after business hours (after 18:00). I used the `AND` operator to require both conditions to be true simultaneously — the login time must be after 18:00 and the login must have failed. `FALSE` is not placed in single quotes because it is Boolean data, not a string.
 
 ```sql
 SELECT *
@@ -20,13 +22,15 @@ FROM log_in_attempts
 WHERE login_time > '18:00' AND success = FALSE;
 ```
 
-![Task 1 — Failed login attempts after 18:00](assets/task1-after-hours.png)
+![Failed login attempts after 18:00](assets/task1-after-hours.png)
 
-I used the `AND` operator to require both conditions to be true at the same time — the login must have occurred after 18:00 and must have failed. `FALSE` is not placed in single quotes because it is Boolean data, not a string. This query returned **19 failed login attempts** after business hours.
+This returned **19 failed login attempts** after business hours.
 
 ---
 
-## Task 2: Retrieve Login Attempts on Specific Dates
+## Retrieve Login Attempts on Specific Dates
+
+A suspicious event occurred on 2022-05-09. I used the `OR` operator to retrieve all login attempts from that day and the day before (2022-05-08), since either date could contain related activity. The `OR` operator returns a record when at least one of the conditions is true.
 
 ```sql
 SELECT *
@@ -34,13 +38,15 @@ FROM log_in_attempts
 WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
 ```
 
-![Task 2 — Login attempts on 2022-05-08 and 2022-05-09](assets/task2-specific-dates.png)
+![Login attempts on 2022-05-08 and 2022-05-09](assets/task2-specific-dates.png)
 
-The `OR` operator returns records where at least one condition is true, so this query captures login attempts from either date. A suspicious event occurred on 2022-05-09, so I also included the day before to capture any related activity. This returned **75 login attempts** across the two days.
+This returned **75 login attempts** across both days.
 
 ---
 
-## Task 3: Retrieve Login Attempts Outside of Mexico
+## Retrieve Login Attempts Outside of Mexico
+
+The team determined the suspicious activity did not originate in Mexico. I used `NOT` combined with `LIKE` and the `%` wildcard to exclude all login attempts from Mexico. The `%` wildcard was necessary because the country column stores values as both `MEX` and `MEXICO` — using `'MEX%'` ensures both formats are matched and excluded.
 
 ```sql
 SELECT *
@@ -48,24 +54,24 @@ FROM log_in_attempts
 WHERE NOT country LIKE 'MEX%';
 ```
 
-![Task 3 — Login attempts not from Mexico](assets/task3-not-mexico.png)
+![Login attempts outside of Mexico](assets/task3-not-mexico.png)
 
-The `NOT` operator excludes records that match the condition. Since the country field stores values as both `MEX` and `MEXICO`, I used `LIKE 'MEX%'` with the `%` wildcard to match both formats, then applied `NOT` to exclude them all. This returned **144 login attempts** that did not originate in Mexico.
+This returned **144 login attempts** from outside Mexico.
 
 ---
 
-## Task 4: Retrieve Employees in Marketing (East Building)
+## Retrieve Employees in Marketing
 
-I first ran a general query to view the structure and values in the `employees` table before writing the filtered query.
+My team needed to update machines for Marketing department employees located in the East building. I first viewed the full employees table to understand the structure of the data.
 
 ```sql
 SELECT *
 FROM employees;
 ```
 
-![Task 4 Step 1 — View all employees table](assets/task4-employees-view.png)
+![View all employees table](assets/task4-employees-view.png)
 
-Then I applied filters for department and office location:
+I then used the `AND` operator to require both conditions and `LIKE` with `%` to match all East building offices (such as East-170, East-320, etc.), since there are multiple offices in that building.
 
 ```sql
 SELECT *
@@ -73,13 +79,15 @@ FROM employees
 WHERE department = 'Marketing' AND office LIKE 'East%';
 ```
 
-![Task 4 Step 2 — Marketing employees in East building](assets/task4-marketing-east.png)
+![Marketing employees in East building](assets/task4-marketing-east.png)
 
-I used `AND` to require both conditions: the employee must be in the `Marketing` department and their office must start with `East` (matching offices like East-170, East-320, etc.). The first employee returned was **elarson**.
+The first employee returned was **elarson**.
 
 ---
 
-## Task 5: Retrieve Employees in Finance or Sales
+## Retrieve Employees in Finance or Sales
+
+My team needed to update machines for employees in the Finance or Sales departments. I used the `OR` operator to return employees from either department. Even though both conditions reference the same column, each full condition must be written out separately.
 
 ```sql
 SELECT *
@@ -87,13 +95,15 @@ FROM employees
 WHERE department = 'Finance' OR department = 'Sales';
 ```
 
-![Task 5 — Employees in Finance or Sales](assets/task5-finance-sales.png)
+![Employees in Finance or Sales](assets/task5-finance-sales.png)
 
-The `OR` operator retrieves employees from either department. Both conditions reference the same `department` column, but each full condition must still be written out separately — `WHERE department = 'Finance' OR department = 'Sales'` is correct, while `WHERE department = 'Finance' OR 'Sales'` would not work. The first employee in the Sales department was **lrodriqu**.
+The first employee in the Sales department returned was **lrodriqu**.
 
 ---
 
-## Task 6: Retrieve All Employees Not in IT
+## Retrieve All Employees Not in IT
+
+The IT department had already received the final update. I used `NOT` to exclude Information Technology employees and return everyone else who still needed the update applied to their machines.
 
 ```sql
 SELECT *
@@ -101,18 +111,18 @@ FROM employees
 WHERE NOT department = 'Information Technology';
 ```
 
-![Task 6 — Employees not in IT](assets/task6-not-it.png)
+![Employees not in IT](assets/task6-not-it.png)
 
-The `NOT` operator excludes all employees in the Information Technology department. This was useful because the IT update had already been applied — I only needed the remaining employees. This returned **161 employees** not in IT.
+This returned **161 employees** outside the IT department.
 
 ---
 
 ## Summary
 
-In this lab, I used the `AND`, `OR`, and `NOT` logical operators to filter data across two tables during a security investigation and system update.
+In this investigation, I applied SQL filters using the `AND`, `OR`, and `NOT` operators to retrieve targeted records from the `log_in_attempts` and `employees` tables. I used `AND` to narrow results by combining multiple required conditions, `OR` to expand results across multiple possible values, and `NOT` to exclude specific groups. I also used the `LIKE` operator with the `%` wildcard to match partial string patterns, such as country codes and office locations. These queries enabled me to identify suspicious login activity and locate the employee machines that needed security updates.
 
-| Query | Operator(s) Used | Result |
-|-------|-----------------|--------|
+| Query | Operator(s) | Result |
+|-------|------------|--------|
 | `WHERE login_time > '18:00' AND success = FALSE` | `AND` | 19 failed attempts |
 | `WHERE login_date = '2022-05-09' OR login_date = '2022-05-08'` | `OR` | 75 attempts |
 | `WHERE NOT country LIKE 'MEX%'` | `NOT`, `LIKE` | 144 attempts |
