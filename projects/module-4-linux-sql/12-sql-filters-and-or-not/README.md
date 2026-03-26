@@ -56,13 +56,24 @@ The `NOT` operator excludes records that match the condition. Since the country 
 
 ## Task 4: Retrieve Employees in Marketing (East Building)
 
+I first ran a general query to view the structure and values in the `employees` table before writing the filtered query.
+
+```sql
+SELECT *
+FROM employees;
+```
+
+![Task 4 Step 1 — View all employees table](assets/task4-employees-view.png)
+
+Then I applied filters for department and office location:
+
 ```sql
 SELECT *
 FROM employees
 WHERE department = 'Marketing' AND office LIKE 'East%';
 ```
 
-![Task 4 — Marketing employees in East building](assets/task4-marketing-east.png)
+![Task 4 Step 2 — Marketing employees in East building](assets/task4-marketing-east.png)
 
 I used `AND` to require both conditions: the employee must be in the `Marketing` department and their office must start with `East` (matching offices like East-170, East-320, etc.). The first employee returned was **elarson**.
 
