@@ -66,7 +66,7 @@ This query returns only the columns needed to identify which operating system ea
 SELECT event_id, country FROM log_in_attempts;
 ```
 
-I retrieved the `event_id` and `country` columns to verify that login attempts were only coming from expected regions (United States, Canada, or Mexico). The results showed that login attempts **were made from Australia**, which is outside the expected regions and warrants further investigation.
+I retrieved the `event_id` and `country` columns to verify that login attempts were only coming from expected regions (United States, Canada, or Mexico). The results confirmed that **no login attempts were made from Australia** — all activity came from expected regions.
 
 ---
 
@@ -76,7 +76,7 @@ I retrieved the `event_id` and `country` columns to verify that login attempts w
 SELECT username, login_date, login_time FROM log_in_attempts;
 ```
 
-I selected the `username`, `login_date`, and `login_time` columns to identify whether any logins occurred outside of normal working hours. The fifth row returned the username **apatel**.
+I selected the `username`, `login_date`, and `login_time` columns to identify whether any logins occurred outside of normal working hours. The fifth row returned the username **jrafael**.
 
 ---
 
@@ -108,7 +108,7 @@ The `ORDER BY` keyword sorts the results in ascending order by default. Sorting 
 SELECT * FROM log_in_attempts ORDER BY login_date, login_time;
 ```
 
-Adding a second column to `ORDER BY` refines the sort — records with the same date are then sorted by time. This gave a precise chronological view of all login attempts. The first record returned was **wjaffrey at 00:15:55**, indicating a very early morning login that may be worth investigating.
+Adding a second column to `ORDER BY` refines the sort — records with the same date are then sorted by time. This gave a precise chronological view of all login attempts. The first record returned was **bsand at 00:19:11**, indicating a very early morning login that may be worth investigating.
 
 ---
 
