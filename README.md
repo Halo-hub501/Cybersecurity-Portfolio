@@ -22,7 +22,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 1 | Foundations of Cybersecurity | ✅ Completed | [Professional Statement](projects/module-1-foundations/professional-statement/) |
 | 2 | Play It Safe: Manage Security Risks | ✅ Completed | [Botium Toys Security Audit](projects/module-2-play-it-safe/botium-toys-audit/) |
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [5 Linux Labs](projects/module-4-linux-sql/) |
+| 4 | Tools of the Trade: Linux and SQL | ✅ Completed | [13 Linux & SQL Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
@@ -67,6 +67,7 @@ Applied all five NIST CSF functions (Identify, Protect, Detect, Respond, Recover
 ---
 
 ### Module 4 — Tools of the Trade: Linux and SQL
+**Certificate:** [Tools of the Trade: Linux and SQL — Mar 27, 2026](https://coursera.org/verify/MWB4N40G0FWE)
 
 **[1. Install Software in a Linux Distribution](projects/module-4-linux-sql/01-install-software-linux/)**
 Used the APT package manager to install, uninstall, and verify software in a Debian-based Linux environment. Managed the full lifecycle of Suricata and tcpdump — two tools directly used in security monitoring and network analysis.
@@ -82,6 +83,30 @@ Used `grep` and piping (`|`) to search log files and user data files for specifi
 
 **[5. Manage Files with Linux Commands](projects/module-4-linux-sql/05-manage-files-linux-commands/)**
 Organized the `/home/analyst` directory by creating a `logs` subdirectory, removing the `temp` directory, moving `Q3patches.txt` to `reports`, deleting an unused file, creating a new `tasks.txt` file, and editing it with the nano text editor.
+
+**[6. Manage Authorization with Linux](projects/module-4-linux-sql/06-manage-authorization/)**
+Used `chmod` to manage file and directory permissions in Linux. Identified and removed unauthorized write access, removed read access for others, and applied recursive permission changes — all using the symbolic and numeric permission system.
+
+**[7. Add and Manage Users in Linux](projects/module-4-linux-sql/07-add-manage-users-linux/)**
+Used `useradd`, `usermod`, `chown`, `userdel`, and `groupdel` to manage user accounts. Added a new researcher, changed file ownership, assigned a supplementary group, and deleted both a user and their group at the end of a contract.
+
+**[8. Get Help in the Command Line](projects/module-4-linux-sql/08-get-help-command-line/)**
+Used `man`, `whatis`, and `apropos` to find information about Linux commands without leaving the terminal. Identified the `-e` flag for setting account expiration dates and found the `groupadd` command using keyword search.
+
+**[9. Basic SQL Queries](projects/module-4-linux-sql/09-basic-sql-queries/)**
+Used `SELECT`, `FROM`, and `ORDER BY` to retrieve and sort data from the `machines` and `log_in_attempts` tables. Practiced ordering results by single and multiple columns to surface meaningful patterns in security data.
+
+**[10. SQL Filters with WHERE and LIKE](projects/module-4-linux-sql/10-sql-filters-where-like/)**
+Applied `WHERE` and `LIKE` with the `%` wildcard to filter records by operating system, department, and office building. Retrieved targeted subsets of employee and machine data to support a security update operation.
+
+**[11. SQL Filters with Numbers and Dates](projects/module-4-linux-sql/11-sql-filters-numbers-dates/)**
+Used comparison operators (`>`, `>=`, `<`, `<=`) and `BETWEEN` to filter login attempts by date and time ranges, and events by ID. Identified after-hours activity and narrowed investigation windows using precise date/time filtering.
+
+**[12. Apply Filters to SQL Queries — AND, OR, NOT](projects/module-4-linux-sql/12-sql-filters-and-or-not/)**
+Applied `AND`, `OR`, and `NOT` operators to combine multiple filter conditions across the `log_in_attempts` and `employees` tables. Identified failed after-hours logins, logins outside Mexico, and employees in specific departments needing security updates.
+
+**[13. SQL Joins](projects/module-4-linux-sql/13-sql-joins/)**
+Used `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` to combine data from the `machines`, `employees`, and `log_in_attempts` tables. Matched employees to their machines and retrieved all login attempt records for active employees during a security investigation.
 
 ---
 
@@ -118,7 +143,7 @@ Organized the `/home/analyst` directory by creating a `logs` subdirectory, remov
 | 1 | Foundations of Cybersecurity | Mar 9, 2026 | [Verify](https://coursera.org/verify/M6YX7WL9BDAB) |
 | 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
-| 4 | Tools of the Trade: Linux and SQL | 🔄 In Progress | [5 Linux Labs](projects/module-4-linux-sql/) |
+| 4 | Tools of the Trade: Linux and SQL | Mar 27, 2026 | [Verify](https://coursera.org/verify/MWB4N40G0FWE) |
 | 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
