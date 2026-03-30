@@ -23,7 +23,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 2 | Play It Safe: Manage Security Risks | ✅ Completed | [Botium Toys Security Audit](projects/module-2-play-it-safe/botium-toys-audit/) |
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
 | 4 | Tools of the Trade: Linux and SQL | ✅ Completed | [13 Linux & SQL Labs](projects/module-4-linux-sql/) |
-| 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
+| 5 | Assets, Threats, and Vulnerabilities | 🔄 In Progress | [Module 5 Labs](projects/module-5-assets-threats-vulnerabilities/) |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
@@ -110,6 +110,13 @@ Used `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` to combine data from the `machi
 
 ---
 
+### Module 5 — Assets, Threats, and Vulnerabilities
+
+**[1. Home Asset Inventory](projects/module-5-assets-threats-vulnerabilities/01-home-asset-inventory/)**
+Created a home office network asset inventory by identifying devices connected to the network, documenting ownership, location, and network access characteristics, and classifying each device by sensitivity level (Restricted, Confidential, Internal-only). Applied the CIA triad to evaluate risk for each asset.
+
+---
+
 ## 🛠️ Tools & Technologies
 
 ### Network Analysis
@@ -144,7 +151,7 @@ Used `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` to combine data from the `machi
 | 2 | Play It Safe: Manage Security Risks | Mar 10, 2026 | [Verify](https://coursera.org/verify/7HQ8W6WYSQC9) |
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
 | 4 | Tools of the Trade: Linux and SQL | Mar 27, 2026 | [Verify](https://coursera.org/verify/MWB4N40G0FWE) |
-| 5 | Assets, Threats, and Vulnerabilities | ⬜ Upcoming | — |
+| 5 | Assets, Threats, and Vulnerabilities | 🔄 In Progress | [Module 5 Labs](projects/module-5-assets-threats-vulnerabilities/) |
 | 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
