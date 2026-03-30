@@ -18,10 +18,10 @@ Asset management is a critical part of every organization's security plan. In th
 |---|-------|---------------|-------|----------|-------|-------------|
 | 1 | Network router | Continuous | Internet service provider (ISP) | On-premises | Has a 2.4 GHz and 5 GHz connection. All devices on the home network connect to the 5 GHz frequency. | Confidential |
 | 2 | Desktop | Occasional | Homeowner | On-premises | Contains private information, like photos. | Restricted |
-| 3 | Guest smartphone | Occasional | Friend | On and Off-premises | Connects to my home network. | Internal-only |
-| 4 | Printer | Occasional | Homeowner | On-premises | Stores print history and may cache documents containing sensitive business information. Not always updated with the latest firmware. | Confidential |
-| 5 | Webcam | Occasional | Homeowner | On-premises | Captures live video feed. If compromised, could expose private home office activity. Connected via USB and Wi-Fi. | Restricted |
-| 6 | External hard drive | Occasional | Homeowner | On-premises | Stores backups of sensitive business files and financial records. Physically portable, increasing risk of theft or loss. | Restricted |
+| 3 | Guest smartphone | Occasional | Friend | On and off-premises | Connects to my home network. | Internal-only |
+| 4 | External hard drive | Occasional | Homeowner | On-premises | Contains music and movies. | Confidential |
+| 5 | Streaming media player | Continuous | Homeowner | On-premises | Payment card information is stored for movie rentals. | Internal-only |
+| 6 | Portable game console | Occasional | Friend | On and off-premises | Has a camera and microphone. | Internal-only |
 
 ---
 
@@ -40,8 +40,8 @@ Asset management is a critical part of every organization's security plan. In th
 
 In this activity, I identified six devices connected to a home office network and evaluated each based on network access, ownership, location, and the type of information they handle. I classified three new devices:
 
-- **Printer** — Classified as **Confidential** because it caches sensitive documents and is accessible to anyone on the network, but should be limited to specific users.
-- **Webcam** — Classified as **Restricted** because it captures live video and if compromised could expose private business activity — access should be need-to-know only.
-- **External hard drive** — Classified as **Restricted** because it stores sensitive business backups and financial records, and its portability increases the risk of physical theft.
+- **External hard drive** — Classified as **Confidential** because it contains personal media files that should be limited to specific users.
+- **Streaming media player** — Classified as **Internal-only** because it stores payment card information for movie rentals and is continuously connected to the network, making it accessible only to users on-premises.
+- **Portable game console** — Classified as **Internal-only** because it has a camera and microphone and is shared with a friend on and off-premises, limiting access to users on-premises.
 
 Effective asset classification helps prioritize which devices require the most protection and informs decisions about access controls, encryption, and monitoring.
