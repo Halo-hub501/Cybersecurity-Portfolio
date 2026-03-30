@@ -16,7 +16,7 @@ In this activity, I conducted a risk assessment for a commercial bank by evaluat
 
 The bank is located in a coastal area with low crime rates. Many people and systems handle the bank's data — 100 on-premise employees and 20 remote employees. The customer base includes 2,000 individual accounts and 200 commercial accounts. The bank's services are marketed by a professional sports team and ten local businesses. Strict financial regulations require the bank to secure its data and funds, including maintaining enough cash to meet Federal Reserve requirements.
 
-**Notes:** The combination of a large number of employees with system access, a broad customer base, and strict regulatory requirements creates a high-risk environment. Security events are possible through human error (such as phishing), poor data security practices (such as weak encryption), or external threats (such as publicly exposed servers or natural disasters affecting supply chains). Given the bank's coastal location, environmental risks to physical operations are also a factor.
+**Notes:** Doing business with other companies might increase the risks to data since it presents other avenues for the information to be compromised. The risk of theft is important, but might not be a priority because the bank is in an area with low crime rates.
 
 ---
 
