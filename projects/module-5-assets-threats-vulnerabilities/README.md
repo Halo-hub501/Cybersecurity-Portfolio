@@ -11,3 +11,4 @@
 | # | Lab | Status |
 |---|-----|--------|
 | 01 | [Home Asset Inventory](01-home-asset-inventory/) | ✅ Completed |
+| 02 | [Risk Register](02-risk-register/) | ✅ Completed |
