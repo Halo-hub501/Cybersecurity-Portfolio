@@ -100,11 +100,9 @@ You recovered the encryption key that was used to encrypt this file. Great work!
 
 ## Screenshots
 
-| Task | Screenshot |
-|------|-----------|
-| Task 1 — List files and read README | ![Task 1](assets/task1-read-readme.png) |
-| Task 2 — Find hidden file and decrypt Caesar cipher | ![Task 2](assets/task2-caesar-cipher.png) |
-| Task 3 — Decrypt encrypted file and read output | ![Task 3](assets/task3-decrypt-openssl.png) |
+| Tasks | Screenshot |
+|-------|-----------|
+| Tasks 1–3 — Full lab walkthrough (ls, cat README, Caesar cipher, openssl decrypt) | ![Full Lab](assets/lab-decrypt-full.png) |
 
 ---
 
