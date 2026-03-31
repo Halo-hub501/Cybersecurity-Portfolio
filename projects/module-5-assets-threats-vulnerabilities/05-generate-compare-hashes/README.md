@@ -80,13 +80,9 @@ The `cmp` command confirmed that the two hash files differ at the very first cha
 
 ## Screenshots
 
-**Task 1 — Generate hashes for file1.txt and file2.txt**
+**Tasks 1–2 — Full lab walkthrough (cat files, sha256sum, file1hash/file2hash, cmp)**
 
-![Task 1](assets/task1-generate-hashes.png)
-
-**Task 2 — Compare hash files with cmp**
-
-![Task 2](assets/task2-compare-hashes.png)
+![Full Lab](assets/lab-hashes-full.png)
 
 ---
 
