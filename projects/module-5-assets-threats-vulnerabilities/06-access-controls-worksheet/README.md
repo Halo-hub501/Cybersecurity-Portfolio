@@ -41,40 +41,32 @@ Cross-referencing the event log with the employee directory revealed that the **
 
 | Column | Details |
 |--------|---------|
-| **Note(s)** | The event was triggered by the **Legal\Administrator** account on 10/03/2023 at 8:29:57 AM. This account belongs to **Robert Taylor Jr.**, a former contractor whose contract ended in 2019. The IP address **152.207.255.255** and computer name **Up2-NoGud** are associated with an external or unauthorized device — not a recognized internal workstation. |
-| **Issue(s)** | 1. **Inactive account not deactivated** — Robert Taylor Jr.'s account remained active years after his contract ended, allowing him to authenticate and access company systems. 2. **Excessive access privileges** — The account had access to payroll and financial resources on the shared cloud drive, far beyond what a legal contractor's role requires. |
-| **Recommendation(s)** | 1. **Implement formal offboarding procedures** — Establish a process to immediately deactivate user accounts and revoke access to all company resources when an employee or contractor leaves the organization. 2. **Apply the principle of least privilege** — Restrict access to sensitive resources (e.g., payroll, financials) based on job role. Only finance team members should have access to payroll systems. 3. **Enable multi-factor authentication (MFA)** — Require MFA for access to all sensitive resources so that a stolen or forgotten credential alone cannot be used to authenticate. |
+| **Note(s)** | - The event took place on 10/03/23. - The user is Legal/Administrator. - The IP address of the computer used to login is 152.207.255.255. |
+| **Issue(s)** | - Robert Taylor Jr. is a contractor with admin access. - His contract ended in 2019, but his account accessed payroll systems in 2023. |
+| **Recommendation(s)** | - User accounts should expire after 30 days. - Contractors should have limited access to business resources. - Enable multi-factor authentication (MFA). |
 
 ---
 
 ## Notes
 
-**Who caused this incident?**
-Robert Taylor Jr. — a former legal department contractor whose account was not deactivated after his contract ended in 2019.
-
-**When did it occur?**
-10/03/2023 at 8:29:57 AM — approximately four years after the user's contract expired.
-
-**What device was used?**
-Computer: Up2-NoGud | IP: 152.207.255.255 — not a recognized internal device, suggesting external access.
+- The event took place on 10/03/23.
+- The user is Legal/Administrator.
+- The IP address of the computer used to login is 152.207.255.255.
 
 ---
 
 ## Issues Identified
 
-1. **Account not deactivated after offboarding** — The contractor's system access was never revoked, leaving an open pathway into company resources for years after his departure.
-
-2. **Overly broad access privileges** — All employees, including contractors, managed resources through a single shared cloud drive with insufficient role-based restrictions. A legal contractor should never have had access to payroll functionality.
+- Robert Taylor Jr. is a contractor with admin access.
+- His contract ended in 2019, but his account accessed payroll systems in 2023.
 
 ---
 
 ## Recommendations
 
-| # | Recommendation | Control Type |
-|---|---------------|-------------|
-| 1 | Establish a formal offboarding process to deactivate accounts and revoke access immediately when an employee or contractor leaves | Operational |
-| 2 | Implement role-based access control (RBAC) — restrict payroll and financial resources to authorized finance team members only | Technical |
-| 3 | Enable multi-factor authentication (MFA) on all systems that handle sensitive or financial data | Technical |
+- User accounts should expire after 30 days.
+- Contractors should have limited access to business resources.
+- Enable multi-factor authentication (MFA).
 
 ---
 
