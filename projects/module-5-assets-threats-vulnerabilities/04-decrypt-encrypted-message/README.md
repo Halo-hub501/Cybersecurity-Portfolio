@@ -100,9 +100,9 @@ You recovered the encryption key that was used to encrypt this file. Great work!
 
 ## Screenshots
 
-| Tasks | Screenshot |
-|-------|-----------|
-| Tasks 1–3 — Full lab walkthrough (ls, cat README, Caesar cipher, openssl decrypt) | ![Full Lab](assets/lab-decrypt-full.png) |
+**Tasks 1–3 — Full lab walkthrough (ls, cat README, Caesar cipher, openssl decrypt)**
+
+![Full Lab](assets/lab-decrypt-full.png)
 
 ---
 
