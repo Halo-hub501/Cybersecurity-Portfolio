@@ -78,18 +78,6 @@ Computer: Up2-NoGud | IP: 152.207.255.255 — not a recognized internal device, 
 
 ---
 
-## Screenshots
-
-**Event log and Employee directory (Accounting Exercise)**
-
-![Accounting Exercise](assets/accounting-exercise.png)
-
-**Completed Access Controls Worksheet**
-
-![Access Controls Worksheet](assets/access-controls-worksheet.png)
-
----
-
 ## Summary
 
 This incident was caused by a failure to apply two fundamental access control principles. First, the company had no offboarding procedure — a contractor's account remained active for four years after his contract ended. Second, there were no role-based access restrictions — a legal contractor had access to payroll systems they had no business reason to use. Together, these gaps allowed an unauthorized user to add a fraudulent payroll entry to an external bank account. Implementing formal offboarding procedures, role-based access control, and multi-factor authentication would significantly reduce the likelihood of this type of incident recurring.
