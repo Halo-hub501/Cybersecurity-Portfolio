@@ -127,6 +127,9 @@ Used Linux Bash commands to decrypt an encrypted file. Found a hidden file conta
 **[5. Generate and Compare Hashes](projects/module-5-assets-threats-vulnerabilities/05-generate-compare-hashes/)**
 Used `sha256sum` to generate cryptographic hashes for two files that appeared visually identical but produced different hash values. Wrote hashes to separate files and used `cmp` to confirm the difference byte by byte — demonstrating how hashing verifies data integrity.
 
+**[6. Access Controls Worksheet](projects/module-5-assets-threats-vulnerabilities/06-access-controls-worksheet/)**
+Investigated an unauthorized payroll transaction by reviewing an event log and cross-referencing it with an employee directory. Identified that a former contractor's account was never deactivated and had excessive access to payroll systems. Recommended offboarding procedures, role-based access control (RBAC), and multi-factor authentication (MFA) as mitigations.
+
 ---
 
 ## 🛠️ Tools & Technologies

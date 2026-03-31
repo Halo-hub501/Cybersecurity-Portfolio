@@ -15,3 +15,4 @@
 | 03 | [Data Leak Worksheet](03-data-leak-worksheet/) | ✅ Completed |
 | 04 | [Decrypt an Encrypted Message](04-decrypt-encrypted-message/) | ✅ Completed |
 | 05 | [Generate and Compare Hashes](05-generate-compare-hashes/) | ✅ Completed |
+| 06 | [Access Controls Worksheet](06-access-controls-worksheet/) | ✅ Completed |
