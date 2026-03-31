@@ -124,6 +124,9 @@ Analyzed a data leak incident caused by overly broad folder access. Reviewed NIS
 **[4. Decrypt an Encrypted Message](projects/module-5-assets-threats-vulnerabilities/04-decrypt-encrypted-message/)**
 Used Linux Bash commands to decrypt an encrypted file. Found a hidden file containing a Caesar cipher, decoded it using the `tr` command, then decrypted an AES-256-CBC encrypted file using `openssl`. Demonstrated practical skills in filesystem navigation, classical cipher decryption, and symmetric encryption.
 
+**[5. Generate and Compare Hashes](projects/module-5-assets-threats-vulnerabilities/05-generate-compare-hashes/)**
+Used `sha256sum` to generate cryptographic hashes for two files that appeared visually identical but produced different hash values. Wrote hashes to separate files and used `cmp` to confirm the difference byte by byte — demonstrating how hashing verifies data integrity.
+
 ---
 
 ## 🛠️ Tools & Technologies
