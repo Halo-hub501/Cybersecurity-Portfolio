@@ -115,6 +115,15 @@ Used `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` to combine data from the `machi
 **[1. Home Asset Inventory](projects/module-5-assets-threats-vulnerabilities/01-home-asset-inventory/)**
 Created a home office network asset inventory by identifying devices connected to the network, documenting ownership, location, and network access characteristics, and classifying each device by sensitivity level (Restricted, Confidential, Internal-only). Applied the CIA triad to evaluate risk for each asset.
 
+**[2. Risk Register](projects/module-5-assets-threats-vulnerabilities/02-risk-register/)**
+Conducted a risk assessment for a commercial bank by evaluating five vulnerabilities. Scored each risk by likelihood and severity, calculated priority scores (Likelihood x Severity), and ranked threats from critical to low — identifying a publicly accessible backup server as the highest-priority risk.
+
+**[3. Data Leak Worksheet](projects/module-5-assets-threats-vulnerabilities/03-data-leak-worksheet/)**
+Analyzed a data leak incident caused by overly broad folder access. Reviewed NIST SP 800-53: AC-6 (Least Privilege), identified the contributing factors, and recommended role-based access restrictions and regular privilege audits to prevent recurrence.
+
+**[4. Decrypt an Encrypted Message](projects/module-5-assets-threats-vulnerabilities/04-decrypt-encrypted-message/)**
+Used Linux Bash commands to decrypt an encrypted file. Found a hidden file containing a Caesar cipher, decoded it using the `tr` command, then decrypted an AES-256-CBC encrypted file using `openssl`. Demonstrated practical skills in filesystem navigation, classical cipher decryption, and symmetric encryption.
+
 ---
 
 ## 🛠️ Tools & Technologies
