@@ -16,19 +16,19 @@ In this activity, I assessed the attack vectors of a USB drive found in a hospit
 
 ## Contents
 
-The USB drive contains a mix of personal and work-related files belonging to Jorge Bailey, the HR manager at Rhetorical Hospital. Personal files include family and pet photos, while work files include a new hire letter and an employee shift schedule. Storing personal and sensitive work files together on an unencrypted portable device puts both the individual and the organization at risk if the device is lost or stolen.
+Some documents appear to contain personal information that Jorge wouldn't want to be made public. The work files include the PII of other people. Also, the work files contain information about the hospital's operations.
 
 ---
 
 ## Attacker Mindset
 
-The work files on this device give a threat actor detailed intelligence about hospital staff — including names, roles, schedules, and newly hired employees who may be less security-aware and easier to manipulate. An attacker could use the HR records to craft convincing spear-phishing emails targeting Jorge, his family members, or new hires. The device itself may have been intentionally planted, with the hospital logo and real-looking files used as a distraction while malicious code executes silently in the background.
+The timesheets can provide an attacker intel about other people that Jorge works with. Either work or personal information could be used to trick Jorge. For example, a malicious email can be designed to look as though it comes from a coworker or relative.
 
 ---
 
 ## Risk Analysis
 
-USB baiting attacks can deliver malicious software such as ransomware, keyloggers, and remote access trojans (RATs) that execute automatically the moment a drive is plugged in. If an infected device had been found and plugged into a live workstation by another employee, it could have compromised the hospital's entire network — putting patient records, financial data, and staff PII at risk. To mitigate these attacks, the hospital should disable USB ports by default on all workstations and only allow approved, encrypted devices. Employees should also receive regular security awareness training on USB baiting and be required to report unknown devices to the security team rather than plug them in.
+Promoting employee awareness about these types of attacks and what to do when a suspicious USB drive is found is a managerial control that can reduce the risk of a negative incident. Setting up routine antivirus scans is an operational control that can be implemented. Another line of defense could be a technical control, like disabling AutoPlay on company PCs, that will prevent a computer from automatically executing malicious code when a USB drive is plugged in.
 
 ---
 
