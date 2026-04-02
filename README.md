@@ -130,6 +130,9 @@ Used `sha256sum` to generate cryptographic hashes for two files that appeared vi
 **[6. Access Controls Worksheet](projects/module-5-assets-threats-vulnerabilities/06-access-controls-worksheet/)**
 Investigated an unauthorized payroll transaction by reviewing an event log and cross-referencing it with an employee directory. Identified that a former contractor's account was never deactivated and had excessive access to payroll systems. Recommended offboarding procedures, role-based access control (RBAC), and multi-factor authentication (MFA) as mitigations.
 
+**[7. Vulnerability Assessment Report](projects/module-5-assets-threats-vulnerabilities/07-vulnerability-assessment-report/)**
+Conducted a vulnerability assessment for an e-commerce company's publicly accessible remote database server using NIST SP 800-30 Rev. 1. Identified three threat sources (hacker, competitor, employee), scored risk using likelihood × severity, and proposed remediation including AAA controls, MFA, IP allow-listing, TLS encryption, and RBAC.
+
 ---
 
 ## 🛠️ Tools & Technologies

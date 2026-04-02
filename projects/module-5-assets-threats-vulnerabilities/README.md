@@ -16,3 +16,4 @@
 | 04 | [Decrypt an Encrypted Message](04-decrypt-encrypted-message/) | ✅ Completed |
 | 05 | [Generate and Compare Hashes](05-generate-compare-hashes/) | ✅ Completed |
 | 06 | [Access Controls Worksheet](06-access-controls-worksheet/) | ✅ Completed |
+| 07 | [Vulnerability Assessment Report](07-vulnerability-assessment-report/) | ✅ Completed |
