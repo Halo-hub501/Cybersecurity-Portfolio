@@ -2,7 +2,8 @@
 
 **Course:** Assets, Threats, and Vulnerabilities (Course 5)
 **Certificate:** Google Cybersecurity Professional Certificate
-**Status:** In Progress
+**Status:** ✅ Completed
+**Certificate:** [Verify — E9XX8Y91VDCD](https://coursera.org/verify/E9XX8Y91VDCD) | Issued Apr 7, 2026
 
 ---
 
