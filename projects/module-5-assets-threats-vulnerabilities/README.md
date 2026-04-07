@@ -18,3 +18,4 @@
 | 06 | [Access Controls Worksheet](06-access-controls-worksheet/) | ✅ Completed |
 | 07 | [Vulnerability Assessment Report](07-vulnerability-assessment-report/) | ✅ Completed |
 | 08 | [Parking Lot USB Exercise](08-parking-lot-usb-exercise/) | ✅ Completed |
+| 09 | [PASTA Threat Model](09-pasta-threat-model/) | ✅ Completed |

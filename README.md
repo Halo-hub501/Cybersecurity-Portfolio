@@ -133,6 +133,12 @@ Investigated an unauthorized payroll transaction by reviewing an event log and c
 **[7. Vulnerability Assessment Report](projects/module-5-assets-threats-vulnerabilities/07-vulnerability-assessment-report/)**
 Conducted a vulnerability assessment for an e-commerce company's publicly accessible remote database server using NIST SP 800-30 Rev. 1. Identified three threat sources (hacker, competitor, employee), scored risk using likelihood × severity, and proposed remediation including AAA controls, MFA, IP allow-listing, TLS encryption, and RBAC.
 
+**[8. Parking Lot USB Exercise](projects/module-5-assets-threats-vulnerabilities/08-parking-lot-usb-exercise/)**
+Assessed the attack vectors of a USB drive found in a hospital parking lot. Analyzed contents containing PII and HR records, considered how the information could be used against the owner and organization, and recommended managerial, operational, and technical controls including employee awareness training, antivirus scans, and disabling AutoPlay.
+
+**[9. PASTA Threat Model](projects/module-5-assets-threats-vulnerabilities/09-pasta-threat-model/)**
+Applied the PASTA (Process of Attack Simulation and Threat Analysis) framework to evaluate a new sneaker company mobile app across all seven stages. Identified SQL injection and session hijacking as primary threats, with vulnerabilities in prepared statements and authentication. Recommended MFA, parameterized queries, SHA-256 hashing, and PKI encryption as controls.
+
 ---
 
 ## 🛠️ Tools & Technologies
