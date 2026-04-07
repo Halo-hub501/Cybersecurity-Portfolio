@@ -43,9 +43,9 @@ The attack tree shows two attack paths targeting user data:
 
 ### Stage I — Define Business and Security Objectives
 
-1. The app must allow users to easily sign up, log in, and manage their accounts while keeping their data private and secure.
-2. Sales must be processed quickly and clearly, with multiple payment options — proper payment handling is critical to avoid legal issues.
-3. Users must be able to message sellers directly and rate them, so the platform needs secure, reliable communication and data integrity.
+1. Users can create member profiles internally or by connecting external accounts.
+2. The app must process financial transactions.
+3. The app should be in compliance with PCI-DSS.
 
 ---
 
@@ -55,7 +55,7 @@ The attack tree shows two attack paths targeting user data:
 
 **Priority technology — API:**
 
-The application programming interface (API) is the most critical technology to evaluate first because it controls how all components of the app communicate — including user authentication, product searches, messaging, and payment processing. A vulnerability in the API could expose user data across every function of the application, making it the highest-risk attack surface.
+APIs facilitate the exchange of data between customers, partners, and employees, so they should be prioritized. They handle a lot of sensitive data while they connect various users and systems together. However, details such as which APIs are being used should be considered before prioritizing one technology over another. So, they can be more prone to security vulnerabilities because there's a larger attack surface.
 
 ---
 
@@ -71,8 +71,8 @@ The data flow diagram illustrates how user data moves through the app. When a us
 
 | # | Threat Type | Description |
 |---|------------|-------------|
-| 1 | **Internal** | A disgruntled employee or insider with database access could intentionally exfiltrate or manipulate sensitive user and payment data. |
-| 2 | **External** | A malicious actor could conduct a SQL injection attack or session hijacking to steal user credentials, payment information, or personal data from the app. |
+| 1 | **Injection** | Injection attacks are common for SQL databases and can allow attackers to manipulate or extract data from the app's database through malicious input. |
+| 2 | **Session hijacking** | Session hijacking is possible because the app communicates cookies between multiple layers, making it vulnerable to interception and unauthorized access. |
 
 ---
 
@@ -81,7 +81,7 @@ The data flow diagram illustrates how user data moves through the app. When a us
 | # | Vulnerability | Description |
 |---|--------------|-------------|
 | 1 | **Lack of prepared statements** | SQL queries that are not parameterized are vulnerable to injection attacks, allowing an attacker to manipulate the database directly through user input fields. |
-| 2 | **Weak login credentials / broken authentication** | If the app does not enforce strong password policies or session management, attackers can exploit weak credentials to hijack user sessions and gain unauthorized access. |
+| 2 | **Broken API token** | If API tokens are mishandled or improperly validated, session hijacking is possible when cookies are passed between input and output sources. |
 
 ---
 
@@ -100,12 +100,12 @@ Both attack paths lead to unauthorized access to user data, including personal i
 
 ### Stage VII — Risk Analysis and Impact
 
-| # | Security Control | Purpose |
-|---|-----------------|---------|
-| 1 | **Prepared statements (parameterized queries)** | Prevents SQL injection by separating SQL code from user input, ensuring malicious input cannot alter database queries |
-| 2 | **Multi-factor authentication (MFA)** | Reduces the risk of session hijacking by requiring a second form of verification beyond just a password |
-| 3 | **SHA-256 hashing** | Protects stored passwords and sensitive data by converting them into irreversible digests, so breached data cannot be directly used |
-| 4 | **PKI encryption (AES + RSA)** | Secures data in transit using AES for sensitive data (e.g., credit card numbers) and RSA for key exchange — preventing interception of payment data |
+| # | Security Control | Type |
+|---|-----------------|------|
+| 1 | **SHA-256** | Technical — hashes sensitive data like passwords and credit card numbers to protect stored information |
+| 2 | **Incident response procedures** | Operational — ensures the team is prepared to detect, contain, and recover from security incidents quickly |
+| 3 | **Password policy** | Managerial — enforces strong password requirements to reduce the risk of session hijacking through weak credentials |
+| 4 | **Principle of least privilege** | Technical/Managerial — limits user and system access to only what is necessary, reducing the blast radius of any breach |
 
 ---
 
