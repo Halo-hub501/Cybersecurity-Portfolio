@@ -24,7 +24,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
 | 4 | Tools of the Trade: Linux and SQL | ✅ Completed | [13 Linux & SQL Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ✅ Completed | [9 Labs](projects/module-5-assets-threats-vulnerabilities/) |
-| 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
+| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [Incident Handler's Journal](projects/module-6-detection-and-incident-response/incident-handlers-journal/) |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
 
@@ -141,6 +141,15 @@ Applied the PASTA (Process of Attack Simulation and Threat Analysis) framework t
 
 ---
 
+### Module 6 — Sound the Alarm: Detection and Response
+
+**[Incident Handler's Journal](projects/module-6-detection-and-incident-response/incident-handlers-journal/)**
+Documenting security incidents using the 5 W's framework as part of an ongoing incident response journal. Each entry captures who caused the incident, what happened, when and where it occurred, and why — building a reference log of real incident scenarios analyzed throughout the course.
+
+- **Entry 1:** Ransomware attack on a U.S. healthcare clinic via phishing email — encrypted critical patient files and shut down business operations.
+
+---
+
 ## 🛠️ Tools & Technologies
 
 ### Network Analysis
@@ -176,7 +185,7 @@ Applied the PASTA (Process of Attack Simulation and Threat Analysis) framework t
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
 | 4 | Tools of the Trade: Linux and SQL | Mar 27, 2026 | [Verify](https://coursera.org/verify/MWB4N40G0FWE) |
 | 5 | Assets, Threats, and Vulnerabilities | ✅ Completed | [9 Labs](projects/module-5-assets-threats-vulnerabilities/) |
-| 6 | Sound the Alarm: Detection and Response | ⬜ Upcoming | — |
+| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [Incident Handler's Journal](projects/module-6-detection-and-incident-response/incident-handlers-journal/) |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
 
