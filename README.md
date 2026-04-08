@@ -150,6 +150,16 @@ Documenting security incidents using the 5 W's framework as part of an ongoing i
 
 ---
 
+## 🧰 Toolkit
+
+A collection of templates and documentation tools I use in my security work.
+
+| # | Tool | Description |
+|---|------|-------------|
+| 1 | [Incident Handler's Journal](toolkit/incident-handlers-journal-template/) | A structured template for documenting security incidents using the 5 W's framework — used during incident response and investigation |
+
+---
+
 ## 🛠️ Tools & Technologies
 
 ### Network Analysis
