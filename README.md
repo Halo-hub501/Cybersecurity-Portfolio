@@ -148,6 +148,14 @@ Documenting security incidents using the 5 W's framework as part of an ongoing i
 
 - **Entry 1:** Ransomware attack on a U.S. healthcare clinic via phishing email — encrypted critical patient files and shut down business operations.
 
+**[Wireshark Packet Analysis](projects/module-6-detection-and-incident-response/wireshark-packet-analysis/)**
+Analyzed a network packet capture file (`sample.pcap`) using Wireshark to investigate web browsing traffic. Applied display filters to isolate traffic by IP address, MAC address, and protocol. Inspected TCP, DNS, ICMP, and HTTP packet layers to extract source/destination IPs, port numbers, TTL values, and payload content.
+
+- Applied 7 display filters including `ip.addr`, `ip.src`, `ip.dst`, `eth.addr`, `udp.port == 53`, `tcp.port == 80`, and `tcp contains`
+- Traced a full TCP three-way handshake (SYN → SYN/ACK → ACK)
+- Examined DNS query and response for `opensource.google.com` — identified 6 returned IP addresses
+- Identified HTTP GET requests made with `curl` by filtering packet payload text
+
 ---
 
 ## 🧰 Toolkit
