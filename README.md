@@ -24,7 +24,7 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 | 3 | Connect and Protect: Networks & Network Security | ✅ Completed | [5 Network Security Projects](projects/module-3-networks/) |
 | 4 | Tools of the Trade: Linux and SQL | ✅ Completed | [13 Linux & SQL Labs](projects/module-4-linux-sql/) |
 | 5 | Assets, Threats, and Vulnerabilities | ✅ Completed | [9 Labs](projects/module-5-assets-threats-vulnerabilities/) |
-| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [Incident Handler's Journal](projects/module-6-detection-and-incident-response/incident-handlers-journal/) |
+| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [2 Labs](projects/module-6-detection-and-incident-response/) |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
 
@@ -203,7 +203,7 @@ A collection of templates and documentation tools I use in my security work.
 | 3 | Connect and Protect: Networks and Network Security | Mar 17, 2026 | [Verify](https://coursera.org/verify/D6PKZARZOAAP) |
 | 4 | Tools of the Trade: Linux and SQL | Mar 27, 2026 | [Verify](https://coursera.org/verify/MWB4N40G0FWE) |
 | 5 | Assets, Threats, and Vulnerabilities | ✅ Completed | [9 Labs](projects/module-5-assets-threats-vulnerabilities/) |
-| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [Incident Handler's Journal](projects/module-6-detection-and-incident-response/incident-handlers-journal/) |
+| 6 | Sound the Alarm: Detection and Response | 🔄 In Progress | [2 Labs](projects/module-6-detection-and-incident-response/) |
 | 7 | Automate Cybersecurity Tasks with Python | ⬜ Upcoming | — |
 | 8 | Put It to Work: Prepare for Cybersecurity Jobs | ⬜ Upcoming | — |
 
