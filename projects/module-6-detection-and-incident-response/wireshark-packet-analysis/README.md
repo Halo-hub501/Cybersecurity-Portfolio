@@ -48,6 +48,10 @@ Wireshark uses color coding to quickly classify traffic:
 - **Light green** = TCP / HTTP traffic
 - **Light pink** = ICMP traffic
 
+### Screenshot — Task 1: Wireshark Overview
+
+![Task 1 - Wireshark Overview](images/task1-wireshark-overview.png)
+
 **Question:** What is the protocol of the first packet where the Info column starts with "Echo (ping) request"?
 
 **Answer:** ✅ **ICMP**
@@ -67,7 +71,21 @@ ip.addr == 142.250.1.139
 
 This returned only packets where either the source or destination IP matched `142.250.1.139`. The display reduced from 200 packets to 16 (8.0%).
 
-Opened the first TCP packet (Packet 64) and inspected each layer:
+### Screenshot — Task 2: IP Filter Applied
+
+![Task 2 - IP Filter](images/task2-ip-filter.png)
+
+### Screenshot — Task 2: Packet Details Pane
+
+![Task 2 - Packet Details](images/task2-packet-details.png)
+
+### Screenshot — Task 2: IPv4 Layer Expanded
+
+![Task 2 - IPv4 Layer](images/task2-ipv4-layer.png)
+
+### Screenshot — Task 2: TCP Layer Expanded
+
+![Task 2 - TCP Layer](images/task2-tcp-layer.png)
 
 ### Layer Breakdown — Packet 64
 
@@ -96,23 +114,35 @@ This packet represents the **TCP SYN** — the first step of the TCP three-way h
 ```
 ip.src == 142.250.1.139
 ```
-Returned 7 packets (3.5%) — only packets **sent from** `142.250.1.139`. These included ICMP Echo Replies and TCP acknowledgements coming back from the remote server.
+
+### Screenshot — Task 3: Source IP Filter
+
+![Task 3 - Source IP Filter](images/task3-src-ip-filter.png)
 
 ### Filter by Destination IP
 ```
 ip.dst == 142.250.1.139
 ```
-Returned 9 packets (4.5%) — only packets **sent to** `142.250.1.139`. These included ICMP Echo Requests and TCP SYN/HTTP GET packets going out to the server.
+
+### Screenshot — Task 3: Destination IP Filter
+
+![Task 3 - Destination IP Filter](images/task3-dst-ip-filter.png)
 
 ### Filter by MAC Address
 ```
 eth.addr == 42:01:ac:15:e0:02
 ```
-Returned all 200 packets (100%) — this MAC address was involved in all traffic captured. Opened Packet 1 and expanded the Ethernet II and IPv4 layers.
+
+### Screenshot — Task 3: MAC Address Filter
+
+![Task 3 - MAC Filter](images/task3-mac-filter.png)
+
+### Screenshot — Task 3: Packet 1 Layer Details
+
+![Task 3 - Packet 1 Details](images/task3-packet1-details.png)
 
 **Packet 1 Details:**
 - Protocol: **SSH** (Source Port 22 → Destination Port 35193)
-- SSH traffic is encrypted — payload visible only as random bytes
 - Frame Length: 210 bytes
 - Src IP: `172.21.224.2` → Dst IP: `35.235.244.34`
 
@@ -133,15 +163,15 @@ Returned all 200 packets (100%) — this MAC address was involved in all traffic
 udp.port == 53
 ```
 
-DNS uses UDP port 53. This filtered only DNS query and response packets.
+### Screenshot — Task 4: DNS Query
 
-### DNS Query — Packet 1 of filtered list
-Expanded the **Domain Name System (query)** subtree → **Queries**:
-- **Name queried:** `opensource.google.com`
-- Type: A (IPv4 address lookup)
+![Task 4 - DNS Query](images/task4-dns-query.png)
 
-### DNS Response — Packet 4 of filtered list (Packet 12 overall)
-Expanded the **Domain Name System (query)** subtree → **Answers**:
+### Screenshot — Task 4: DNS Response with Answers
+
+![Task 4 - DNS Response](images/task4-dns-response.png)
+
+### DNS Response — Packet 12
 
 | Answer | IP Address |
 |---|---|
@@ -151,17 +181,11 @@ Expanded the **Domain Name System (query)** subtree → **Answers**:
 | opensource.google.com | `142.250.1.113` |
 | opensource.google.com | `142.250.1.100` |
 
-**DNS Response Details:**
-- Source: `169.254.169.254` (DNS server) → Destination: `172.21.224.2` (client)
-- Protocol: UDP, Port 53
-- Transaction ID: 0x0c26
-- Answer RRs: 6 (6 IP addresses returned)
-
 **Question:** Which IP address is displayed in the Answers section for the DNS query for `opensource.google.com`?
 
 **Answer:** ✅ **142.250.1.139**
 
-**Why:** The DNS server returned multiple IP addresses for `opensource.google.com`. This is normal — large services like Google use multiple IPs for load balancing. The client will connect to one of them.
+**Why:** The DNS server returned multiple IP addresses for `opensource.google.com`. Large services like Google use multiple IPs for load balancing. The client connects to one of them.
 
 ---
 
@@ -174,9 +198,17 @@ Expanded the **Domain Name System (query)** subtree → **Answers**:
 tcp.port == 80
 ```
 
-This returned all HTTP traffic (port 80 = unencrypted web). Multiple TCP sessions visible: SYN → SYN/ACK → ACK → HTTP GET → HTTP Response → FIN/ACK.
+### Screenshot — Task 5: TCP Port 80 Filter
 
-Opened the first packet (Packet 37) — Destination: `169.254.169.254`
+![Task 5 - TCP Port 80](images/task5-tcp-port80.png)
+
+### Screenshot — Task 5: Packet 37 Details
+
+![Task 5 - Packet Details](images/task5-packet37-details.png)
+
+### Screenshot — Task 5: IPv4 Header Details
+
+![Task 5 - IPv4 Header](images/task5-ipv4-header.png)
 
 ### Packet 37 — Full Header Analysis
 
@@ -188,8 +220,19 @@ Opened the first packet (Packet 37) — Destination: `169.254.169.254`
 | **Destination Address** | `169.254.169.254` |
 | **Source Address** | `172.21.224.2` |
 | **Protocol** | TCP (6) |
-| **TCP Src Port** | 56664 |
-| **TCP Dst Port** | 80 |
+
+### Filter by Payload Content
+```
+tcp contains "curl"
+```
+
+### Screenshot — Task 5: Payload Text Search
+
+![Task 5 - Curl Filter](images/task5-curl-filter.png)
+
+This returned 2 packets — HTTP GET requests made using the `curl` command-line tool:
+- **Packet 67:** `GET / HTTP/1.1` → `142.250.1.139`
+- **Packet 148:** `GET / HTTP/1.1` → `142.250.1.102`
 
 **Questions and Answers:**
 
@@ -199,20 +242,6 @@ Opened the first packet (Packet 37) — Destination: `169.254.169.254`
 | Frame Length? | ✅ **54 bytes** |
 | Header Length? | ✅ **20 bytes** |
 | Destination Address? | ✅ **169.254.169.254** |
-
-### Filter by Payload Content
-```
-tcp contains "curl"
-```
-
-This returned 2 packets — HTTP GET requests made using the `curl` command-line tool:
-
-- **Packet 67:** `GET / HTTP/1.1` → `142.250.1.139` (opensource.google.com)
-- **Packet 148:** `GET / HTTP/1.1` → `142.250.1.102` (opensource.google.com)
-
-Inspecting the payload bytes showed the HTTP request headers including `Host: opensource.google.com` and `User-Agent: curl/7.74.0`.
-
-**Why this matters:** The `tcp contains` filter is a powerful tool for finding specific text in packet payloads — used in real investigations to find credentials, malware strings, exfiltrated data, or suspicious commands in unencrypted traffic.
 
 ---
 
@@ -232,12 +261,12 @@ Inspecting the payload bytes showed the HTTP request headers including `Host: op
 
 ## Key Takeaways
 
-1. **Wireshark displays packets in layers** — each layer (Ethernet, IP, TCP, Application) adds its own header with important metadata for investigation
-2. **Display filters are essential** — 200 packets is unmanageable without filters; real captures can have millions
-3. **DNS reveals intent** — DNS queries show which domains a host is trying to reach, even before a connection is established
+1. **Wireshark displays packets in layers** — each layer adds its own header with important metadata
+2. **Display filters are essential** — real captures can have millions of packets without filters
+3. **DNS reveals intent** — DNS queries show which domains a host is trying to reach before a connection is established
 4. **TCP flags tell the story** — SYN, SYN/ACK, ACK, FIN/ACK reveal the full connection lifecycle
-5. **Payload filters find hidden data** — `tcp contains` can surface specific text in unencrypted traffic, critical for detecting data exfiltration or credential theft
-6. **TTL values indicate OS** — TTL of 64 suggests Linux/Mac; TTL of 128 typically indicates Windows
+5. **Payload filters find hidden data** — `tcp contains` surfaces specific text in unencrypted traffic, critical for detecting data exfiltration
+6. **TTL values indicate OS** — TTL 64 = Linux/Mac, TTL 128 = Windows
 
 ---
 
