@@ -164,6 +164,13 @@ Captured and analyzed live network traffic using tcpdump command-line tool. Iden
 - Filtered HTTP traffic on port 80 with `tcpdump -i eth0 -nn -c9 port 80 -w capture.pcap`
 - Analyzed captured packets in hexadecimal and ASCII format to inspect packet structure and payloads
 
+**[Wireshark vs tcpdump Comparison](projects/module-6-detection-and-incident-response/wireshark-tcpdump-comparison/)**
+Comparative analysis of two essential network protocol analyzers. Identified 2+ unique features for each tool, documented 5 key similarities, and provided practical guidance on when to use each tool based on your investigation scenario.
+
+- **Wireshark:** GUI-based, real-time visualization, interactive packet dissection, cross-platform
+- **tcpdump:** CLI-based, lightweight, scriptable, ideal for remote servers and automation
+- **Shared:** Both are packet sniffers, support .pcap files, analyze same protocols, require sudo, open-source
+
 ---
 
 ## 🧰 Toolkit
