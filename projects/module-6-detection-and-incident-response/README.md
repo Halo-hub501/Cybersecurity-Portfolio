@@ -12,3 +12,4 @@
 |---|-----|--------|
 | 01 | [Incident Handler's Journal](incident-handlers-journal/) | 🔄 In Progress |
 | 02 | [Wireshark Packet Analysis](wireshark-packet-analysis/) | ✅ Completed |
+| 03 | [tcpdump Packet Capture](tcpdump-packet-capture/) | ✅ Completed |
