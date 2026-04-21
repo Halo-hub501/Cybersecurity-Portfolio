@@ -186,16 +186,19 @@ A collection of templates and documentation tools I use in my security work.
 ## 🛠️ Tools & Technologies
 
 ### Network Analysis
-![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white)
+
+[![Wireshark](https://img.shields.io/badge/-Wireshark_SOC_Analysis-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white)](projects/wireshark-soc-analysis/)
 ![Suricata](https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white)
 
-**Project:** [SOC Tier 1 Alert Triage System](tools/) — Real-world PCAP analysis & incident response
-- Extracts security indicators from actual malware traffic (15,500+ packets)
+#### [Wireshark SOC Analysis Project](projects/wireshark-soc-analysis/) ⭐
+Real-world incident response with actual malware PCAP (15,500+ packets)
+- Extracts security indicators from real captured network traffic
 - Deduplicates and correlates security events into incidents
-- Detects reconnaissance (CLDAP enumeration, port scanning, DNS queries)
-- Executes automated response playbooks by severity
-- Visualizes threats and response actions on interactive dashboard
-- Maintains complete forensic audit trail
+- Detects reconnaissance (CLDAP enumeration, port scanning)
+- Executes automated response playbooks by severity level
+- Interactive HTML dashboard showing all threats and responses
+- Complete forensic audit trail of all SOC operations
+- **[View Dashboard](projects/wireshark-soc-analysis/dashboard.html)** | **[See Incidents](projects/wireshark-soc-analysis/incidents.json)**
 
 ### SIEM
 ![Splunk](https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white)

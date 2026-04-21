@@ -1,0 +1,26 @@
+[
+  {
+    "id": "alert_1",
+    "type": "suspicious_protocol",
+    "severity": "high",
+    "data": {
+      "alert_type": "suspicious_protocol",
+      "protocol": "CLDAP",
+      "occurrence_count": 583,
+      "description": "CLDAP reconnaissance detected - possible active directory enumeration",
+      "timestamp": "1776750722.76527"
+    }
+  },
+  {
+    "id": "alert_2",
+    "type": "network_reconnaissance",
+    "severity": "medium",
+    "data": {
+      "alert_type": "network_reconnaissance",
+      "source_ip_count": 99,
+      "dest_ip_count": 102,
+      "description": "Network scanning activity detected",
+      "timestamp": "1776750722.76527"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "incident_1",
+    "type": "suspicious_protocol",
+    "alert_count": 1,
+    "severity": "high",
+    "escalation": "medium",
+    "timestamp": "1776750722.76527",
+    "status": "responded",
+    "alerts": [
+      "alert_1"
+    ],
+    "actions_taken": []
+  },
+  {
+    "id": "incident_2",
+    "type": "network_reconnaissance",
+    "alert_count": 1,
+    "severity": "medium",
+    "escalation": "medium",
+    "timestamp": "1776750722.76527",
+    "status": "responded",
+    "alerts": [
+      "alert_2"
+    ],
+    "actions_taken": []
+  }
+]
