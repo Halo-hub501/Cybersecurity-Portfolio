@@ -30,6 +30,37 @@ Secure a **Junior Cybersecurity Analyst** or **Tier 1 SOC Analyst** role where I
 
 ---
 
+## 🚨 Real-World Project: SOC Tier 1 Alert Triage System
+
+**[SOC Alert Triage & Incident Response](tools/)** ⭐ *Hands-on experience with real malware traffic*
+
+Built a complete Tier 1 SOC workflow that processes real network traffic, detects threats, and automates incident response:
+
+**What it does:**
+- **PCAP Parser** — Extracts security indicators from real captured malware traffic
+- **Alert Triage Engine** — Deduplicates and correlates security events into incidents
+- **Threat Detection** — Identifies reconnaissance (CLDAP enumeration, port scanning, DNS queries)
+- **Automated Response** — Executes playbooks based on threat severity (block IPs, isolate hosts, escalate)
+- **Interactive Dashboard** — Visualizes detected threats and response actions
+- **Audit Logging** — Complete forensic trail of all SOC operations
+
+**Real-world data:**
+- Analyzed 15,500+ packets from actual malware-traffic-analysis.net PCAP
+- Detected active directory reconnaissance attempts
+- Processed through full SOC workflow: alert → triage → correlate → respond → log
+
+**Skills demonstrated:**
+- Network traffic analysis & packet inspection
+- Threat detection & incident correlation
+- Security automation & playbook execution
+- Audit logging & forensic investigation
+- Python scripting for security operations
+
+📁 **Code:** `tools/parse_pcap.py`, `tools/triage_alerts.py`, `tools/generate_dashboard.py`
+📋 **Workflow:** `workflows/alert_triage_soc.md`
+
+---
+
 ## 🗂️ Projects
 
 ### Module 1 — Foundations of Cybersecurity
