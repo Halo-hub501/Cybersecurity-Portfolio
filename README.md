@@ -189,15 +189,13 @@ A collection of templates and documentation tools I use in my security work.
 ![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white)
 ![Suricata](https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white)
 
-**[🚨 SOC Tier 1 Alert Triage System](tools/)** — Real-world PCAP analysis & incident response automation
-- **PCAP Parser** extracts security indicators from actual malware traffic (15,500+ packets analyzed)
-- **Alert Triage Engine** deduplicates and correlates security events into incidents
-- **Threat Detection** identifies reconnaissance (CLDAP enumeration, port scanning, DNS queries)
-- **Automated Response** executes playbooks for different severity levels
-- **Interactive Dashboard** visualizes threats and response actions
-- **Audit Logging** maintains complete forensic trail of all SOC operations
-
-📁 Code: `tools/parse_pcap.py` | `tools/triage_alerts.py` | `tools/generate_dashboard.py`
+**Project:** [SOC Tier 1 Alert Triage System](tools/) — Real-world PCAP analysis & incident response
+- Extracts security indicators from actual malware traffic (15,500+ packets)
+- Deduplicates and correlates security events into incidents
+- Detects reconnaissance (CLDAP enumeration, port scanning, DNS queries)
+- Executes automated response playbooks by severity
+- Visualizes threats and response actions on interactive dashboard
+- Maintains complete forensic audit trail
 
 ### SIEM
 ![Splunk](https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white)
